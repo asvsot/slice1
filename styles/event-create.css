@@ -1,0 +1,45 @@
+.event-caption-input  {
+    font-size: 22px;
+}
+.event-date-input {
+    width: 45px;
+    text-align: center;
+}
+.event-category-input {
+    margin-left: 2px;
+    width: 160px;
+}
+.e-type {
+    left: 0;
+    width: 100%;
+    position: relative;
+    float: left;
+    padding-top: 10px;
+}
+.e-type fieldset{
+    display: block;
+    position: relative;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    border: 0;
+    width: 220px;
+}
+.e-type fieldset input {
+    /*display: block;*/
+    /*float: left;*/
+    margin: 5px;
+}
+.event-text-input {
+    width: 500px;
+    height: 200px;
+    margin-top: 10px;
+}
+.e-text {
+    float: left;
+    padding-top: 15px;
+}
+.e-participants  {
+    width: 500px;
+}

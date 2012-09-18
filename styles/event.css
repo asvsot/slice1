@@ -1,0 +1,224 @@
+.content-page-caption {
+    margin-bottom: 15px;
+}
+.event-more-b1 {
+    position: relative;
+    float: left;
+}
+.event-more-b2{
+    float: left;
+    width: 270px;
+    position: relative;
+    padding-left: 5px;
+}
+.event-more-b2 div{
+    color: #696969;
+    margin: 10px;
+    margin-top: 0 !important;
+    padding-top: 2px !important;
+    position: relative;
+    /*padding-left: 20px;*/
+}
+.event-more-b2 img {
+    top: -2px;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+
+.event-more-join {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#e-text {
+    float: left;
+    padding-top: 15px;
+    color: #5c5c5c;
+    /*width: 100%;*/
+}
+
+
+#e-caption {
+    font-size: 24px;
+    margin-bottom: 10px;
+
+}
+.share {
+    padding-top: 15px;
+    float: left;
+    left: 0;
+    width: 100%;
+    color: #5c5c5c;
+}
+
+#content-all-comments{
+    float: left;
+
+}
+#content-comments-list {
+    padding: 0;
+}
+
+#content-all-comments ol {
+    list-style: none;
+
+
+}
+
+#content-all-comments div {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#content-all-comments span {
+    font-size: 10px;
+    color: #a9a9a9;
+}
+#content-all-comments a {
+    text-decoration: underline;
+    color: #696969;
+}
+.event-invite a{
+    font-size: 26px;
+    color: #ba0001;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+.event-invite sup{
+    font-weight: bold;
+}
+#content-all-comments .content-comments-header a{
+    text-decoration: none;
+    color: #808080;
+
+}
+#user-bar {
+    position: relative;
+    float: left;
+    right: 0;
+    width: 260px;
+    height: 120px;
+    background-color: #ffffff;
+}
+#user-bar img {
+    margin: 20px;
+    margin-left: 15px;
+    float: left;
+}
+#user-info div{
+    position: relative;
+    /*float: left;*/
+    text-align: center;
+    width: 100%;
+}
+
+#user-info {
+    position: relative;
+    padding-top: 27px;
+    padding-left: 0;
+    padding-right: 0;
+    float: left;
+    margin: 0 auto;
+
+}
+.user-name  {
+    color: #797979;
+    font-size: 22px;
+}
+
+.user-activity {
+    color: #a9a9a9;
+    font-size: 16px;
+}
+
+.user-actcount {
+    color: #000000;
+    font-size: 12px;
+}
+
+#user-events , #user-all-events {
+    position: relative;
+    float: left;
+    right: 0;
+    width: 260px;
+    /*height: 50px;*/
+    text-align: center;
+}
+
+#user-events div, #user-all-events div{
+    position: relative;
+    float: left;
+    width: 260px;
+    padding: 0;
+
+    /*padding: 5px;*/
+    height: 52px;
+    /*padding-top: 0px;*/
+    background-color: #dedddd;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid #d1d0d0;
+    cursor: pointer;
+    cursor: hand;
+
+    /*padding-left: 10px;*/
+}
+#user-events div div, #user-all-events div div  {
+    float: left !important;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    /*height: 15px;*/
+    border: 0;
+    height: 20px;
+    position: relative;
+    background: none;
+    width: 210px;
+    /*background-color: red;*/
+    /*margin:0;*/
+    margin-top: 4px;
+
+}
+
+
+
+#user-events div img , #user-all-events div img {
+    /*display: block;*/
+    position: relative;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+
+}
+.user-events-caption , .user-events-show-more {
+    height: 35px !important;
+    padding-top: 15px !important;
+    background-color: #ffffff !important;
+    font-size: 22px;
+}
+
+.user-events-caption {
+    color: #797979;
+    margin-top: 5px;
+    cursor: default !important;
+
+
+}
+.user-events-show-more{
+    color: #c82c10;
+    margin-bottom: 5px;
+    border: 0 !important  ;
+    cursor: pointer;
+    cursor: hand;
+}
+.user-event-title {
+    font-size: 20px !important;
+    color: #797979 ;
+}
+.user-event-time {
+    font-size: 12px !important;
+    color: #797979 ;
+
+}
+
+
