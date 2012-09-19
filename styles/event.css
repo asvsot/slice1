@@ -40,9 +40,18 @@
 
 
 #e-caption {
+    position: relative;
     font-size: 24px;
     margin-bottom: 10px;
 
+}
+.event-edit-button a{
+    text-decoration: none;
+    position: absolute;
+    right: 40px;
+    top: 0;
+    color: #c7290c;
+    font-size: 14px !important;
 }
 .share {
     padding-top: 15px;
@@ -70,10 +79,15 @@
     margin-bottom: 10px;
     margin-top: 10px;
 }
-#content-all-comments span {
+#content-all-comments .content-comments-datetime {
     font-size: 10px;
     color: #a9a9a9;
+
 }
+#content-all-comments span{
+    color: #696969;
+}
+
 #content-all-comments a {
     text-decoration: underline;
     color: #696969;
@@ -135,7 +149,7 @@
 
 .user-actcount {
     color: #000000;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 #user-events , #user-all-events {
@@ -222,5 +236,22 @@
     color: #797979 ;
 
 }
+.float-red-select {
+    color: #8b0000;
+    border: 0;
+    background:transparent ;
+    width: auto;
 
+}
+.event-owner-selects-wrapper {
+    margin-top: 15px;
+    color: #c7290c;
+}
+
+.event-owner-selects-wrapper div {
+    margin-right: 15px;
+}
+.event-owner-select {
+    color: #000000;
+}
 
