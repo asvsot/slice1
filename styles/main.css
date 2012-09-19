@@ -176,6 +176,7 @@ body {
 }
 
 .search-input {
+    border: none;
     position: relative;
     float: left;
     right: 50px;
