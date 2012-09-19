@@ -5,6 +5,11 @@ body {
     /*margin: 0px;
     position: relative;*/
 }
+.usual {
+    float: left;
+    position: relative;
+
+}
 .header {
     position: relative;
     min-width: 1024px;
@@ -293,7 +298,7 @@ body {
 .footer {
     border: 8px solid #d1ccba;
     position: relative;
-    width: 950px;
+    width: 955px;
     margin: 0 auto;
     height: 145px;
     bottom: 0;
