@@ -5,6 +5,9 @@
     <title>Event Page</title>
     <link type="text/css" rel="stylesheet" media="all" href="styles/main.css">
     <link type="text/css" rel="stylesheet" media="all" href="styles/event.css">
+    <link type="text/css" rel="stylesheet" media="all" href="styles/event-create.css">
+    <link type="text/css" rel="stylesheet" media="all" href="styles/draft_calendar.css">
+    <link type="text/css" rel="stylesheet" media="all" href="styles/draft_activity.css">
 </head>
 <body>
   <div class="page">
@@ -33,41 +36,50 @@
               <div class="content-header-active last"><a href="/">Страница события</a></div>
           </div>
           <div class="content-page">
-              <div id="e-caption"><span>Street Art Utopia</span></div>
+              <div id="e-caption">
+                  <span>Street Art Utopia</span>
+                  <div class="event-edit-button"><a href="">редактировать</a></div>
+              </div>
               <div class="event-more-b1">
                   <div id="e-image">
                      <img src="userimages/event0001.png">
                   </div>
-                  <div class="content-footer event-more-join">
-                      Join event
+                  <div class="usual event-owner-selects-wrapper">
+                      <div class="usual">
+                          <span> мой статус: </span>
+                          <span class="event-owner-select"> иду </span>
+                      </div>
+                      <div class="usual">
+                          <span> напомнить: </span>
+                          <span class="event-owner-select"> 3 дня </span>
+                      </div>
+
                   </div>
               </div>
               <div class="event-more-b2">
                   <div id="e-date">
-                     <img src="images/filterdate.png">30 апр - Май 03,2012
+                     <img src="images/filterdate.png"><span>30 апр - Май 03,2012</span>
                   </div>
                   <div id="e-location">
-                      <img src="images/filterlocation.png">Киев, Клуб"Бинго"
+                      <img src="images/filterlocation.png"><span>Киев, Клуб"Бинго"</span>
                   </div>
                   <div class="e-category">
-                      <img src="images/dir-tree-icon.png">Развлечения
+                      <img src="images/dir-tree-icon.png"><span>Развлечения</span>
                   </div>
                   <div class="e-site">
-                      <img src="images/filtertags.png">www.Bingo.com.ua
+                      <img src="images/filtertags.png"><span>www.Bingo.com.ua</span>
                   </div>
                   <div class="e-people">
-                      <img src="images/people-icon.png">4 идут/8 не определились
-                  </div>
-                  <div class="event-invite">
-                   <a href="/"><sup>+</sup>пригласить</a>
+                      <img src="images/people-icon.png"><span>4 идут/8 не определились</span>
                   </div>
               </div>
               <div id="e-text" >
-                  Breaking Bad («Во все тяжкие»), возможно, уже и не жилец в
+                  <span>Breaking Bad («Во все тяжкие»), возможно, уже и не жилец в
                   этом телевизионном мире, однако у драмы AMC, по мере приближения к финалу,продолжает расти аудитория.
 
                   В это воскресенье сериал превзошел свои предыдущие рекорды, которые были поставлены,
                   когда в эфир вышли премьерные эпизоды четвертого и пятого сезонов. Последнюю серию посмотрело 3 ...
+                  </span>
               </div>
               <div id="share-img" class="share">
                   Shere&nbsp;this&nbsp;Event&nbsp;:&nbsp;
@@ -85,40 +97,40 @@
                           <div class="">
                               <img src="images/people-icon.png" class="ava-icon">
                               <a href="">user</a>
-                              <span>13 апреля 2012,08:13</span>
+                              <span class="content-comments-datetime">13 апреля 2012,08:13</span>
                           </div>
                           <div class="">
-                              Самая изысканная современная музыка - для тех, кто знает себе цену и готов получать от жизни еще больше.
+                              <span>Самая изысканная современная музыка - для тех, кто знает себе цену и готов получать от жизни еще больше.</span>
                           </div>
                       </li>
                       <li id="comment-2">
                           <div class="1">
                               <img src="images/people-icon.png" class="ava-icon">
                               <a href="">fdgdfg</a>
-                              <span>13 апреля 2012,08:13</span>
+                              <span class="content-comments-datetime">13 апреля 2012,08:13</span>
                           </div>
                           <div class="1">
-                              Самая изысканная современная музыка - для тех, кто знает себе цену и готов получать от жизни еще больше.
+                              <span>Самая изысканная современная музыка - для тех, кто знает себе цену и готов получать от жизни еще больше.</span>
                           </div>
                           <ol>
                               <li id="comment-3">
                                   <div class="">
                                       <img src="images/people-icon.png" class="ava-icon">
                                       <a href="">fsrs</a>
-                                      <span>13 апреля 2012,08:13</span>
+                                      <span class="content-comments-datetime">13 апреля 2012,08:13</span>
                                   </div>
                                   <div class="">
-                                      SSSSSSSSSS SSSSSSSSS SSSSSSSSSSSSSS
+                                      <span>SSSSSSSSSS SSSSSSSSS SSSSSSSSSSSSSS</span>
                                   </div>
                               </li>
                               <li id="comment-4">
                                   <div class="">
                                       <img src="images/people-icon.png" class="ava-icon">
                                       <a href="">fsrs</a>
-                                      <span>13 апреля 2012,08:13</span>
+                                      <span class="content-comments-datetime">13 апреля 2012,08:13</span>
                                   </div>
                                   <div class="">
-                                      SSSSSSSSSS SSSSSSSSS SSSSSSSSSSSSSS
+                                      <span>SSSSSSSSSS SSSSSSSSS SSSSSSSSSSSSSS</span>
                                   </div>
                               </li>
                           </ol>
@@ -127,20 +139,20 @@
                           <div class="">
                               <img src="images/people-icon.png" class="ava-icon">
                               <a href="">fsrs</a>
-                              <span>13 апреля 2012,08:13</span>
+                              <span class="content-comments-datetime">13 апреля 2012,08:13</span>
                           </div>
                           <div class="">
-                              SSSSSSSSSS SSSSSSSSS SSSSSSSSSSSSSS
+                              <span>SSSSSSSSSS SSSSSSSSS SSSSSSSSSSSSSS</span>
                           </div>
                       </li>
                       <li id="comment-6">
                           <div class="">
                               <img src="images/people-icon.png" class="ava-icon">
                               <a href="">fsrs</a>
-                              <span>13 апреля 2012,08:13</span>
+                              <span class="content-comments-datetime">13 апреля 2012,08:13</span>
                           </div>
                           <div class="">
-                              SSSSSSSSSS SSSSSSSSS SSSSSSSSSSSSSS
+                              <span>SSSSSSSSSS SSSSSSSSS SSSSSSSSSSSSSS</span>
                           </div>
 
                       </li>
@@ -148,10 +160,10 @@
                           <div class="">
                               <img src="images/people-icon.png" class="ava-icon">
                               <a href="">fsrs</a>
-                              <span>13 апреля 2012,08:13</span>
+                              <span class="content-comments-datetime">13 апреля 2012,08:13</span>
                           </div>
                           <div class="">
-                              SSSSSSSSSS SSSSSSSSS SSSSSSSSSSSSSS
+                              <span>SSSSSSSSSS SSSSSSSSS SSSSSSSSSSSSSS</span>
                           </div>
                       </li>
                   </ol>
@@ -167,59 +179,59 @@
              <div id="user-bar">
               <img src="userimages/avatar01.png" class="avatar">
               <div id="user-info">
-                  <div class="user-name">Username</div>
-                  <div class="user-activity">Автор / Учасник</div>
+                  <div class="user-name"><span>Username</span></div>
+                  <div class="user-activity"><span>Активных событий</span></div>
                   <div class="user-actprogress"></div>
-                  <div class="user-actcount">3/12</div>
+                  <div class="user-actcount"><span>5</span></div>
               </div>
              </div>
              <div id="user-events">
-                 <div class="user-events-caption">Еще события Username</div>
+                 <div class="user-events-caption"><span>Еще события Username</span></div>
                  <div class="user-event-item">
                      <img src="userimages/event-small0001.png">
-                     <div class="user-event-title">Fotography by Oliver</div>
-                     <div class="user-event-time">Today, 17:45</div>
+                     <div class="user-event-title"><span>Fotography by Oliver</span></div>
+                     <div class="user-event-time"><span>Today, 17:45</span></div>
                  </div>
                  <div class="user-event-item">
                      <img src="userimages/event-small0002.png">
-                     <div class="user-event-title">Abadoned Psyhiatric</div>
-                     <div class="user-event-time">Today, 22:32</div>
+                     <div class="user-event-title"><span>Abadoned Psyhiatric</span></div>
+                     <div class="user-event-time"><span>Today, 22:32</span></div>
                  </div>
                  <div class="user-event-item">
                      <img src="userimages/event-small0003.png">
-                     <div class="user-event-title">Stephen Baretss photo</div>
-                     <div class="user-event-time">Apr 30 - May 03, 2012</div>
+                     <div class="user-event-title"><span>Stephen Baretss photo</span></div>
+                     <div class="user-event-time"><span>Apr 30 - May 03, 2012</span></div>
                  </div>
                  <div class="user-event-item">
                      <img src="userimages/event-small0001.png">
-                     <div class="user-event-title">Stephen Baretss photo</div>
-                     <div class="user-event-time">Apr 30 - May 03, 2012</div>
+                     <div class="user-event-title"><span>Stephen Baretss photo</span></div>
+                     <div class="user-event-time"><span>Apr 30 - May 03, 2012</span></div>
                  </div>
-                 <div class="user-events-show-more">Весь список</div>
+                 <div class="user-events-show-more"><span>Весь список</span></div>
              </div>
              <div id="user-all-events">
-                 <div class="user-events-caption">События из каталога</div>
+                 <div class="user-events-caption"><span>События из каталога</span></div>
                  <div class="user-event-item">
                      <img src="userimages/event-small0002.png">
-                     <div class="user-event-title">Fotography by Oliver</div>
-                     <div class="user-event-time">Today, 17:45</div>
+                     <div class="user-event-title"><span>Fotography by Oliver</span></div>
+                     <div class="user-event-time"><span>Today, 17:45</span></div>
                  </div>
                  <div class="user-event-item">
                      <img src="userimages/event-small0003.png">
-                     <div class="user-event-title">Abadoned Psyhiatric</div>
-                     <div class="user-event-time">Today, 22:32</div>
+                     <div class="user-event-title"><span>Abadoned Psyhiatric</span></div>
+                     <div class="user-event-time"><span>Today, 22:32</span></div>
                  </div>
                  <div class="user-event-item">
                      <img src="userimages/event-small0001.png">
-                     <div class="user-event-title">Stephen Baretss photo</div>
-                     <div class="user-event-time">Apr 30 - May 03, 2012</div>
+                     <div class="user-event-title"><span>Stephen Baretss photo</span></div>
+                     <div class="user-event-time"><span>Apr 30 - May 03, 2012</span></div>
                  </div>
                  <div class="user-event-item">
                      <img src="userimages/event-small0002.png">
-                     <div class="user-event-title">Stephen Baretss photo</div>
-                     <div class="user-event-time">Apr 30 - May 03, 2012</div>
+                     <div class="user-event-title"><span>Stephen Baretss photo</span></div>
+                     <div class="user-event-time"><span>Apr 30 - May 03, 2012</span></div>
                  </div>
-                 <div class="user-events-show-more">Весь список</div>
+                 <div class="user-events-show-more"><span>Весь список</span></div>
              </div>
 
 
