@@ -1,0 +1,86 @@
+.quest-form-header {
+    background-color: #ffffff;
+    width: 100%;
+}
+.quest-form-header img {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.quest-form-header-item {
+    text-align: center;
+    font-size: 18px;
+    height: 30px;
+    padding-top: 15px;
+    padding-right: 25px;
+    margin-right: 15px;
+    padding-left: 10px;
+    border-right: 1px solid #565656;
+}
+
+.quest-form-header-item a {
+    text-decoration: none;
+    color: #000000;
+}
+.quest-active a {
+    color: #c82c10;
+}
+
+.quest-form-filter {
+    width: 280px;
+    color: #494949;
+}
+
+.quest-form-filter fieldset {
+    border: 0;
+    padding: 5px;
+    margin: 5px;
+}
+
+.quest-page {
+    width: 100% !important;
+    background-color: #ededed;
+    padding-top: 20px;
+    margin-top: 0 !important;
+}
+.quest-form-list {
+    width: 710px;
+}
+
+.quest-form-list-item {
+    width: 100%;
+    height: 47px;
+    padding-top: 5px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #cecece;
+    background-color: #ececec;
+}
+.q-second {
+    background-color: #f2f0f0;
+}
+.quest-form-list-item div {
+    padding-top: 10px;
+}
+.quest-form-list-item-username {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+.quest-form-list-item-status {
+    color: #808080;
+    width: 250px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.quest-form-list-item-cross {
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    right: 5px;
+    cursor: pointer;
+    cursor: hand;
+}
