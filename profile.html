@@ -1,178 +1,193 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" >
+    <meta charset="utf-8">
     <title>Event Page</title>
-    <link type="text/css" rel="stylesheet" media="all" href="styles/main.css">
-    <link type="text/css" rel="stylesheet" media="all" href="styles/event.css">
-    <link type="text/css" rel="stylesheet" media="all" href="styles/event-create.css">
-    <link type="text/css" rel="stylesheet" media="all" href="styles/draft_calendar.css">
-    <link type="text/css" rel="stylesheet" media="all" href="styles/draft_activity.css">
-    <link type="text/css" rel="stylesheet" media="all" href="styles/profile.css">
+    <link type="text/css"
+          rel="stylesheet"
+          media="all"
+          href="styles/main.css">
 </head>
 <body>
-  <div class="page">
-      <div class="header" >
-          <div class="page-header">
-              <div class="logo">
-                  <a  href="/"><img src="images/logo.png"></a>
-              </div>
-              <div class="nav">
-                  <div class="menu-active"><a class="" href="/">Activity</a></div>
-                  <div class="border"></div>
-                  <div ><a class="" href="/">Calendar</a></div>
-                  <div class="border"></div>
-                  <div ><a class="" href="/">Catalog</a></div>
-                  <div class="border"></div>
-                  <div ><a href="/">Profile</a></div>
-              </div>
-              <div class="login">
-                  <a href="/"><img src="images/user-icon.png">Username</a>
-              </div>
+<div class="page">
+    <div class="header">
+        <div class="page-header">
+            <div class="logo">
+                <a href="/"><img src="images/logo.png"></a>
+            </div>
+            <div class="nav">
+                <div class="menu-active"><a class=""
+                                            href="/">Activity</a></div>
+                <div class="border"></div>
+                <div><a class=""
+                        href="/">Calendar</a></div>
+                <div class="border"></div>
+                <div><a class=""
+                        href="/">Catalog</a></div>
+                <div class="border"></div>
+                <div><a href="/">Profile</a></div>
+            </div>
+            <div class="login">
+                <a href="/"><img src="images/user-icon.png">Username</a>
+            </div>
 
-          </div>
-      </div>
-     <div class="content">
-          <div class="content-header">
-              <div class="content-header-active last"><a href="/">Страница события</a></div>
-          </div>
-          <div class="content-page">
-              <div id="e-caption">
-                  <span>Username</span>
-              </div>
-              <div class="usual">
-                  <div class="usual">
-                      <img src="userimages/avatar01.png" class="avatar">
-                  </div>
-                  <div class="usual profile-main-data">
-                          <div class="usual profile-main-count">
-                              <div class="usual first-event-counter">
-                                  <span>12</span>
-                                  <sup>автор</sup>
-                              </div>
-                              <div class="usual second-event-counter">
-                                  <span>12</span>
-                                  <sup>автор</sup>
-                              </div>
-                              <div class="usual profile-main-more">
-                                  <span>More</span>
-                              </div>
-                          </div>
-                          <div class="usual profile-main-description">
-                              <span>Создает и посылает электронное письмо с уведомлением, когда с данной учетной записью производятся определенные операции. See alsouser_mail_tokens()</span>
-                          </div>
-                  </div>
-              </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-header">
+            <div class="content-header-active last"><a href="/">Страница события</a></div>
+            <div class="content-header-event last"><img src="images/event-logo.png"></div>
+        </div>
+        <div class="content-page">
+            <div id="e-caption">
+                <span>Username</span>
+            </div>
+            <div class="usual">
+                <div class="usual">
+                    <img src="userimages/avatar01.png"
+                         class="avatar">
+                </div>
+                <div class="usual profile-main-data">
+                    <div class="usual profile-main-count">
+                        <div class="usual first-event-counter">
+                            <span>12</span>
+                            <sup>автор</sup>
+                        </div>
+                        <div class="usual second-event-counter">
+                            <span>12</span>
+                            <sup>автор</sup>
+                        </div>
+                        <div class="usual profile-main-more">
+                            <span>More</span>
+                        </div>
+                    </div>
+                    <div class="usual profile-main-description">
+                        <span>Создает и посылает электронное письмо с уведомлением, когда с данной учетной записью производятся определенные операции. See alsouser_mail_tokens()</span>
+                    </div>
+                </div>
+            </div>
 
+            <div id="share-img"
+                 class="share">
+                <a class="profile-site-link"
+                   href="">www.site.com</a>
+                <a href=""><img src="images/tweet.png"></a>
+                <a href=""><img src="images/facebook.png"></a>
+                <a href=""><img src="images/vk.png"></a>
+                <a href=""><img src="images/mail.png"></a>
+            </div>
+            <div id="user-events"
+                 class="wide shadow-border">
+                <div class="user-events-caption wide"><span>Последние события пользователя</span></div>
+                <div class="wide">
+                    <img src="userimages/event-small0002.png">
 
-              <div id="share-img" class="share">
-                  <a class="profile-site-link" href="">www.site.com</a>
-                  <a href=""><img src="images/tweet.png"></a>
-                  <a href=""><img src="images/facebook.png"></a>
-                  <a href=""><img src="images/vk.png"></a>
-                  <a href=""><img src="images/mail.png"></a>
-              </div>
-              <div id="user-all-events" class="wide">
-                  <div class="user-events-caption wide"><span>Последние события пользователя</span></div>
-                  <div class="wide">
-                      <img src="userimages/event-small0002.png">
-                      <div class="draft-event-title"><span>Fotography by Oliver</span></div>
-                      <div class="draft-event-text"><span> возможно, уже и не жилец в этом телевизионном мире, однако у драмы AMC, по мере приближения к финалу,продолжает расти аудитория.</span></div>
-                      <div class="draft-event-time"><span>Today, 17:45</span></div>
-                  </div>
-                  <div class="wide">
-                      <img src="userimages/event-small0003.png">
-                      <div class="draft-event-title"><span>Abadoned Psyhiatric</span></div>
-                      <div class="draft-event-text"><span> возможно, уже и не жилец в этом телевизионном мире, однако у драмы AMC, по мере приближения к финалу,продолжает расти аудитория.</span></div>
-                      <div class="draft-event-time"><span>Today, 22:32</span></div>
-                  </div>
-                  <div class="wide">
-                      <img src="userimages/event-small0001.png">
-                      <div class="draft-event-title"><span>Stephen Baretss photo</span></div>
-                      <div class="draft-event-text"><span> возможно, уже и не жилец в этом телевизионном мире, однако у драмы AMC, по мере приближения к финалу,продолжает расти аудитория.</span></div>
-                      <div class="draft-event-time"><span>Apr 30 - May 03, 2012</span></div>
-                  </div>
-                  <div class="wide">
-                      <img src="userimages/event-small0002.png">
-                      <div class="draft-event-title"><span>Stephen Baretss photo</span></div>
-                      <div class="draft-event-text"><span> возможно, уже и не жилец в этом телевизионном мире, однако у драмы AMC, по мере приближения к финалу,продолжает расти аудитория.</span></div>
-                      <div class="draft-event-time"><span>Apr 30 - May 03, 2012</span></div>
-                  </div>
-                  <div class="draft-events-show-more wide last"><span>More</span></div>
+                    <div class="draft-event-title"><span>Fotography by Oliver</span></div>
+                    <div class="draft-event-text"><span>уже и не жилец в этом телевизионном мире, однако у драмы AMC, по мере приближения к финалу,продолжает расти аудитория.</span>
+                    </div>
+                    <div class="draft-event-time"><span>Today, 17:45</span></div>
+                </div>
+                <div class="wide">
+                    <img src="userimages/event-small0003.png">
 
-              </div>
-              <div style="height:1px;overflow:hidden;clear:both;">
+                    <div class="draft-event-title"><span>Abadoned Psyhiatric</span></div>
+                    <div class="draft-event-text"><span>уже и не жилец в этом телевизионном мире, однако у драмы AMC, по мере приближения к финалу,продолжает расти аудитория.</span>
+                    </div>
+                    <div class="draft-event-time"><span>Today, 22:32</span></div>
+                </div>
+                <div class="wide">
+                    <img src="userimages/event-small0001.png">
 
-              </div>
-          </div>
+                    <div class="draft-event-title"><span>Stephen Baretss photo</span></div>
+                    <div class="draft-event-text"><span>уже и не жилец в этом телевизионном мире, однако у драмы AMC, по мере приближения к финалу,продолжает расти аудитория.</span>
+                    </div>
+                    <div class="draft-event-time"><span>Apr 30 - May 03, 2012</span></div>
+                </div>
+                <div class="wide">
+                    <img src="userimages/event-small0002.png">
 
+                    <div class="draft-event-title"><span>Stephen Baretss photo</span></div>
+                    <div class="draft-event-text"><span>уже и не жилец в этом телевизионном мире, однако у драмы AMC, по мере приближения к финалу,продолжает расти аудитория.</span>
+                    </div>
+                    <div class="draft-event-time"><span>Apr 30 - May 03, 2012</span></div>
+                </div>
 
-         <div class="content-right-sidebar">
+            </div>
+            <div class="draft-events-show-more shadow-border wide last"><span>More</span></div>
+            <div style="height:1px;overflow:hidden;clear:both;">
 
-             <div id="user-all-events">
-                 <div class="user-events-caption"><span>События из каталога</span></div>
-                 <div class="user-event-item">
-                     <img src="userimages/event-small0002.png">
-                     <div class="user-event-title"><span>Fotography by Oliver</span></div>
-                     <div class="user-event-time"><span>Today, 17:45</span></div>
-                 </div>
-                 <div class="user-event-item">
-                     <img src="userimages/event-small0003.png">
-                     <div class="user-event-title"><span>Abadoned Psyhiatric</span></div>
-                     <div class="user-event-time"><span>Today, 22:32</span></div>
-                 </div>
-                 <div class="user-event-item">
-                     <img src="userimages/event-small0001.png">
-                     <div class="user-event-title"><span>Stephen Baretss photo</span></div>
-                     <div class="user-event-time"><span>Apr 30 - May 03, 2012</span></div>
-                 </div>
-                 <div class="user-event-item">
-                     <img src="userimages/event-small0002.png">
-                     <div class="user-event-title"><span>Stephen Baretss photo</span></div>
-                     <div class="user-event-time"><span>Apr 30 - May 03, 2012</span></div>
-                 </div>
-                 <div class="user-events-show-more"><span>Весь список</span></div>
-             </div>
+            </div>
+        </div>
 
+        <div class="content-right-sidebar">
 
-         </div>
+            <div id="user-all-events"
+                 class="shadow-border">
+                <div class="user-events-caption"><span>События из каталога</span></div>
+                <div class="user-event-item">
+                    <img src="userimages/event-small0002.png">
 
+                    <div class="user-event-title"><span>Fotography by Oliver</span></div>
+                    <div class="user-event-time"><span>Today, 17:45</span></div>
+                </div>
+                <div class="user-event-item">
+                    <img src="userimages/event-small0003.png">
 
-      </div>
-      <div class="footer">
-          <div class="footer-menu">
-              <span>About</span>
-              <ul>
-                  <li><a href="/">How it works</a></li>
-                  <li><a href="/">Terms of service</a></li>
-                  <li><a href="/">Privacy Policy</a></li>
-              </ul>
-          </div>
-          <div class="footer-menu">
-              <span>Catalog</span>
-              <ul>
-                  <li><a href="/">All</a></li>
-                  <li><a href="/">Rest</a></li>
-                  <li><a href="/">Privacy Policy</a></li>
-                  <li><a href="/">Special Offers</a></li>
-              </ul>
-          </div>
-          <div class="footer-menu">
-              <span>Support</span>
-              <ul>
-                  <li><a href="/">FAQ</a></li>
-                  <li><a href="/">Rest</a></li>
-              </ul>
-          </div>
-          <div class="footer-menu last">
-              <span>Language</span>
-              <ul>
-                  <li><a href="/">English</a></li>
-                  <li><a href="/">Ukrainian</a></li>
-                  <li><a href="/">German</a></li>
-              </ul>
-          </div>
-      </div>
-  </div>
+                    <div class="user-event-title"><span>Abadoned Psyhiatric</span></div>
+                    <div class="user-event-time"><span>Today, 22:32</span></div>
+                </div>
+                <div class="user-event-item">
+                    <img src="userimages/event-small0001.png">
+
+                    <div class="user-event-title"><span>Stephen Baretss photo</span></div>
+                    <div class="user-event-time"><span>Apr 30 - May 03, 2012</span></div>
+                </div>
+                <div class="user-event-item">
+                    <img src="userimages/event-small0002.png">
+
+                    <div class="user-event-title"><span>Stephen Baretss photo</span></div>
+                    <div class="user-event-time"><span>Apr 30 - May 03, 2012</span></div>
+                </div>
+
+            </div>
+            <div class="user-events-show-more full-wide shadow-border"><span>Весь список</span></div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="footer-menu">
+            <span>About</span>
+            <ul>
+                <li><a href="/">How it works</a></li>
+                <li><a href="/">Terms of service</a></li>
+                <li><a href="/">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-menu">
+            <span>Catalog</span>
+            <ul>
+                <li><a href="/">All</a></li>
+                <li><a href="/">Rest</a></li>
+                <li><a href="/">Privacy Policy</a></li>
+                <li><a href="/">Special Offers</a></li>
+            </ul>
+        </div>
+        <div class="footer-menu">
+            <span>Support</span>
+            <ul>
+                <li><a href="/">FAQ</a></li>
+                <li><a href="/">Rest</a></li>
+            </ul>
+        </div>
+        <div class="footer-menu last">
+            <span>Language</span>
+            <ul>
+                <li><a href="/">English</a></li>
+                <li><a href="/">Ukrainian</a></li>
+                <li><a href="/">German</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 </body>
 </html>
