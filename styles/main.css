@@ -1157,6 +1157,9 @@ body {
     color: #797979;
     cursor: default !important;
 }
+.margin-b5 {
+    margin-bottom: 5px;
+}
 
 .user-events-show-more {
     height: 35px !important;
