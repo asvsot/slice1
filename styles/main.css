@@ -145,10 +145,13 @@ body {
     margin: 0 auto;
 }
 
+
 .content-header div {
+    width: 170px;
+    text-align: center;
     position: relative;
     float: left;
-    font-size: 20px;
+    font-size: 18pt;
     padding: 10px;
     border-right: 1px solid #ffffff;
 
@@ -156,7 +159,13 @@ body {
 
 .content-header a {
     text-decoration: none;
-    color: #000000;
+    color: #575956;
+}
+.content-pre-header {
+    position: relative;
+    padding-top: 50px;
+    height: 100px ;
+    width: 100%;
 }
 
 .content-header-active a {
@@ -164,8 +173,26 @@ body {
 }
 
 .content-header-event {
+    padding: 0 !important;
     position: absolute !important;
     right: 10px;
+    bottom: 0;
+}
+.content-header-event div {
+    color: #db2c0c;
+    text-align: right;
+    width: 150px;
+    font-size: 12pt;
+    font-family: "Helvetica Neue";
+    cursor: pointer;
+}
+.content-header-event img {
+    /*position: relative;*/
+    display: block;
+    float: right;
+    padding-top: 3px;
+    padding-left: 3px;
+
 }
 
 .content-page {
@@ -556,7 +583,7 @@ body {
 
 .main-content-popular-tags a {
     text-decoration: none;
-    color: #76af68;
+    color: #a51101;
 }
 
 .main-content-popular-tags {
@@ -587,6 +614,9 @@ body {
     background-color: #ededed;
     border-bottom: 1px solid #ffffff;
 }
+.activity-period-first {
+    padding-top: 3px;
+}
 
 .padding-bottom-30 {
     padding-bottom: 40px;
@@ -616,7 +646,7 @@ body {
 .activity-event-item {
     position: relative;
     float: left;
-    height: 100px;
+    height: 110px;
     width: 100%;
     border-top: 1px solid #ffffff !important;
     border-bottom: 1px solid #ffffff;
@@ -652,7 +682,8 @@ body {
     color: #656565;
     padding-top: 10px;
     padding-left: 20px;
-    width: 630px;
+    /*width: 100%;*/
+    width: 660px;
 }
 
 .activity-event-other {
@@ -683,9 +714,11 @@ body {
 
 .activity-event-time {
     position: absolute;
-    right: 0px;
-    top: 3px;
+    right: 3px;
+    top: 5px;
     color: #c24e4e;
+    font-size: 11pt  ;
+    font-style: italic;
 }
 
 .activity-user-link {
@@ -1420,5 +1453,36 @@ body {
 
 .quest-form-or {
     font-size: 11pt;
+}
+
+.site-slogan {
+    width: 100%;
+    height: 80px;
+
+}
+
+.site-slogan-text {
+    height: 80px;
+    font-size: 20pt;
+    padding-left: 30px;
+    padding-top: 5px;
+    margin-right: 150px;
+    color: #a99b4d;
+
+}
+
+.main-eventplus-button {
+    text-align: center;
+    width: 100px;
+    padding: 15px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.site-slogan-signature {
+    position: absolute;
+    bottom: 0;
+    font-size: 12pt;
+    font-family: Trebuchet;
 }
 
