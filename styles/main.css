@@ -597,6 +597,13 @@ body {
 
 .form-input {
     border: 1px solid #777777;
+    width: 320px;
+    height: 18px;
+    float: left;
+    padding: 0;
+    margin: 0;
+
+
 }
 
 .activity-search {
@@ -1343,11 +1350,20 @@ body {
 }
 
 .quest-form-filter {
-    font-size: 13.2pt;
+    font-size: 13pt;
     height: 100%;
-    width: 280px;
+    width: 360px;
     color: #494949;
     padding-left: 10px;
+    margin-right: 25px;
+}
+
+.quest-form-filter-top {
+    font-size: 10pt;
+}
+
+.send-input {
+    margin-top: 15px;
 }
 
 .quest-form-filter fieldset {
@@ -1416,43 +1432,55 @@ body {
     height: 450px;
     overflow: auto;
     margin-bottom: 5px;
-    margin-top: 5px;
+    margin-top: 10px;
+}
+
+.quest-form-invite-list {
+    height: 670px;
+    overflow: auto;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    width: 570px;
 }
 
 .quest-form-invite-text {
-    width: 665px;
-    padding-left: 20px;
+    width: 360px;
+    /*padding-left: 20px;*/
 }
 
 .quest-form-invite-text textarea {
     resize: none;
-    width: 660px;
-    height: 498px;
+    width: 353px;
+    height: 198px;
     margin-bottom: 5px;
 }
 
 .quest-form-change {
     position: absolute;
-    right: 40px;
+    right: 20px;
     bottom: 0;
     border-radius: 25px 25px 0 0;
     width: 120px;
-    height: 20px;
+    height: 18px;
     padding-top: 5px;
     background-color: #d6634e;
     text-align: center;
     cursor: pointer;
     color: #ffffff;
 }
+.quest-form-change span {
+    right: 20px;
+}
 
 .quest-form-invite-text-header {
     height: 25px;
     width: 100%;
+    font-size: 11pt;
 
 }
-
-.quest-form-or {
-    font-size: 11pt;
+.bottom0 {
+    position: absolute;
+    bottom: 0;
 }
 
 .site-slogan {
@@ -1486,3 +1514,43 @@ body {
     font-family: Trebuchet;
 }
 
+.form-input-add-button {
+    background: url("../images/3arrows.png") no-repeat center;
+    background-color: white;
+    width: 30px;
+    height: 18px;
+    border: 1px solid #494949;
+    margin-left: 4px;
+    cursor: pointer;
+
+}
+
+.form-input-add-button:hover {
+    background-color: #f2f0f0;
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Для Firefox */
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Для Safari и Chrome */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Параметры тени */
+}
+
+.quest-form-invited {
+    width: 570px;
+    height: 600px;
+}
+
+.form-user-already-button {
+    color: #a51101;
+
+}
+
+.form-user-invite-button:hover {
+    color: #76af68;
+    cursor: pointer;
+}
+
+.form-user-invite-block {
+    font-size: 9pt;
+    text-align: right;
+    width: 170px;
+    padding-top: 15px !important;
+    font-style: italic;
+}
