@@ -187,7 +187,7 @@
              $(this).children('span').text("приглашен") ;
              $(this).children('span').toggleClass("form-user-invite-button form-user-already-button");
              var newElement = '<div  class="quest-form-list-item usual" '+ 'id="' + invitedId + '">' +
-                     ' <img class="usual" src="userimages/avatar-0001.png"><div class="usual quest-form-list-item-username"><span>'+$(this).prev().text()+'</span>' +
+                     ' <img class="usual" width="44px" height="42px" src="userimages/avatar-0001.png"><div class="usual quest-form-list-item-username"><span>'+$(this).prev().text()+'</span>' +
                      '</div><img  class="' + 'quest-form-list-item-cross"'+' src="'+'images/cross.png">'+'</div>' ;
 
              $("#invited-users").append(newElement);
