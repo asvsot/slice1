@@ -160,11 +160,12 @@ body {
 .content-header-event {
     padding: 0 !important;
     position: absolute !important;
-    right: 10px;
-    bottom: 0;
+    right: 15px;
+    bottom: 12px;
 }
 .content-header-event div {
     color: #db2c0c;
+    padding: 0;
     text-align: right;
     width: 150px;
     font-size: 12pt;
@@ -1283,6 +1284,10 @@ body {
 .quest-form-list {
     width: 690px;
     margin-bottom: 5px;
+}
+
+.thin {
+    width:auto !important;
 }
 
 .quest-form-list-item {

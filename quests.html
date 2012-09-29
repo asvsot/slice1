@@ -10,6 +10,9 @@
             type="text/javascript"></script>
     <script src="js/jquery-ui-1.8.23.custom.min.js"
             type="text/javascript"></script>
+    <script src="js/quest.js"
+            type="text/javascript">
+    </script>
     <link type="text/css"
           rel="stylesheet"
           media="all"
@@ -34,26 +37,26 @@
     </div>
     <div class="content-page usual quest-page">
 
-        <div class="quest-form-filter usual">
+        <div class="quest-form-filter thin usual">
             <span>Посетителей: 24</span>
             <fieldset form="quest-form">
                 <legend>Выбрать:</legend>
                 <input type="checkbox"
                        form="quest-form"
-                       name="catalog"
-                       value=""> идет<br>
+                       name="go"
+                       value="идет"> идет<br>
                 <input type="checkbox"
                        form="quest-form"
-                       name="catalog"
-                       value=""> не идет<br>
+                       name="nogo"
+                       value="не идет"> не идет<br>
                 <input type="checkbox"
                        form="quest-form"
-                       name="catalog"
-                       value=""> не определился<br>
+                       name="noknow"
+                       value="не определился"> не определился<br>
                 <input type="checkbox"
                        form="quest-form"
-                       name="catalog"
-                       value=""> не ответил на приглашение<br>
+                       name="noanswer"
+                       value="не ответил на приглашение"> не ответил на приглашение<br>
             </fieldset>
             <div style="height:1px;overflow:hidden;clear:both;"></div>
         </div>
@@ -65,7 +68,7 @@
                          src="userimages/avatar-0001.png">
 
                     <div class="usual quest-form-list-item-username"><span>Username</span></div>
-                    <div class="usual quest-form-list-item-status"><span>статус</span></div>
+                    <div class="go usual quest-form-list-item-status"><span>идет</span></div>
                     <img class="quest-form-list-item-cross"
                          src="images/cross.png">
                 </div>
@@ -74,7 +77,7 @@
                          src="userimages/avatar-0001.png">
 
                     <div class="usual quest-form-list-item-username"><span>Username</span></div>
-                    <div class="usual quest-form-list-item-status"><span>статус</span></div>
+                    <div class="nogo usual quest-form-list-item-status"><span>не идет</span></div>
                     <img class="quest-form-list-item-cross"
                          src="images/cross.png">
                 </div>
@@ -83,7 +86,7 @@
                          src="userimages/avatar-0001.png">
 
                     <div class="usual quest-form-list-item-username"><span>Username</span></div>
-                    <div class="usual quest-form-list-item-status"><span>статус</span></div>
+                    <div class="go usual quest-form-list-item-status"><span>идет</span></div>
                     <img class="quest-form-list-item-cross"
                          src="images/cross.png">
                 </div>
@@ -92,7 +95,7 @@
                          src="userimages/avatar-0001.png">
 
                     <div class="usual quest-form-list-item-username"><span>Username</span></div>
-                    <div class="usual quest-form-list-item-status"><span>статус</span></div>
+                    <div class="nogo usual quest-form-list-item-status"><span>не идет</span></div>
                     <img class="quest-form-list-item-cross"
                          src="images/cross.png">
                 </div>
@@ -101,7 +104,7 @@
                          src="userimages/avatar-0001.png">
 
                     <div class="usual quest-form-list-item-username"><span>Username</span></div>
-                    <div class="usual quest-form-list-item-status"><span>статус</span></div>
+                    <div class="go usual quest-form-list-item-status"><span>идет</span></div>
                     <img class="quest-form-list-item-cross"
                          src="images/cross.png">
                 </div>
@@ -110,7 +113,7 @@
                          src="userimages/avatar-0001.png">
 
                     <div class="usual quest-form-list-item-username"><span>Username</span></div>
-                    <div class="usual quest-form-list-item-status"><span>статус</span></div>
+                    <div class="noknow usual quest-form-list-item-status"><span>не определился</span></div>
                     <img class="quest-form-list-item-cross"
                          src="images/cross.png">
                 </div>
@@ -119,7 +122,7 @@
                          src="userimages/avatar-0001.png">
 
                     <div class="usual quest-form-list-item-username"><span>Username</span></div>
-                    <div class="usual quest-form-list-item-status"><span>статус</span></div>
+                    <div class="noanswer usual quest-form-list-item-status"><span>не ответил на приглашение</span></div>
                     <img class="quest-form-list-item-cross"
                          src="images/cross.png">
                 </div>
@@ -135,6 +138,7 @@
 
     <div style="height:1px;overflow:hidden;clear:both;"></div>
 </div>
+
 
 </body>
 </html>
