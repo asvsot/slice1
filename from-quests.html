@@ -10,6 +10,9 @@
             type="text/javascript"></script>
     <script src="js/jquery-ui-1.8.23.custom.min.js"
             type="text/javascript"></script>
+    <script src="js/from-quest.js"
+            type="text/javascript">
+    </script>
     <link type="text/css"
           rel="stylesheet"
           media="all"
@@ -18,208 +21,173 @@
 <body>
 
 <div class="content">
-<div class="quest-form-header usual">
-    <div class="quest-form-header-item usual">
-        <span>Street Art Utopia</span>
-    </div>
-    <div class="quest-form-header-item usual">
-        <a href="">Список посетителей</a>
-    </div>
-    <div class="quest-form-header-item usual last  quest-active">
-        <a href="">пригласить</a>
-    </div>
-    <img src="images/big-cross.png">
+    <div class="quest-form-header usual">
+        <div class="quest-form-header-item usual">
+            <span>Street Art Utopia</span>
+        </div>
+        <div class="quest-form-header-item usual">
+            <a href="">Список посетителей</a>
+        </div>
+        <div class="quest-form-header-item usual last  quest-active">
+            <a href="">пригласить</a>
+        </div>
+        <img src="images/big-cross.png">
 
+        <div style="height:1px;overflow:hidden;clear:both;"></div>
+    </div>
+    <div class="content-page usual quest-page">
+
+        <div class="quest-form-filter usual">
+            <span class="quest-form-filter-top">Добавить гостей</span>
+
+            <div class="send-input">
+                <input type="text" id="filter" placeholder="введите имя или почту" class="form-input" value="">
+
+                <div class="usual form-input-add-button"></div>
+            </div>
+
+
+            <div>
+                <div class="usual quest-form-contact-list shadow-border">
+                    <div class="quest-form-list-item usual q-second">
+                        <img class="usual"
+                             src="userimages/avatar-0001.png">
+
+                        <div class="usual quest-form-list-item-username"><span>vasiliy</span></div>
+                        <div id="user1-status" class="usual form-user-invite-block"><span
+                                class="form-user-invite-button">ПРИГЛАСИТЬ</span></div>
+                    </div>
+                    <div class="quest-form-list-item usual">
+                        <img class="usual"
+                             src="userimages/avatar-0001.png">
+
+                        <div class="usual quest-form-list-item-username"><span>vladimir</span></div>
+                        <div id="user2-status" class="usual form-user-invite-block"><span
+                                class="form-user-invite-button">ПРИГЛАСИТЬ</span></div>
+                    </div>
+                    <div class="quest-form-list-item usual q-second">
+                        <img class="usual"
+                             src="userimages/avatar-0001.png">
+
+                        <div class="usual quest-form-list-item-username"><span>andrey</span></div>
+                        <div id="user3-status" class="usual form-user-invite-block"><span
+                                class="form-user-invite-button">ПРИГЛАСИТЬ</span></div>
+                    </div>
+                    <div class="quest-form-list-item usual">
+                        <img class="usual"
+                             src="userimages/avatar-0001.png">
+
+                        <div class="usual quest-form-list-item-username"><span>anton</span></div>
+                        <div id="user4-status" class="usual form-user-invite-block"><span
+                                class="form-user-invite-button">ПРИГЛАСИТЬ</span></div>
+                    </div>
+                    <div class="quest-form-list-item usual q-second">
+                        <img class="usual"
+                             src="userimages/avatar-0001.png">
+
+                        <div class="usual quest-form-list-item-username"><span>aleksander</span></div>
+                        <div id="user5-status" class="usual form-user-invite-block"><span
+                                class="form-user-invite-button">ПРИГЛАСИТЬ</span></div>
+                    </div>
+                    <div class="quest-form-list-item usual">
+                        <img class="usual"
+                             src="userimages/avatar-0001.png">
+
+                        <div class="usual quest-form-list-item-username"><span>filip</span></div>
+                        <div id="user6-status" class="usual form-user-invite-block"><span
+                                class="form-user-invite-button">ПРИГЛАСИТЬ</span></div>
+                    </div>
+                    <div class="quest-form-list-item usual q-second">
+                        <img class="usual"
+                             src="userimages/avatar-0001.png">
+
+                        <div class="usual quest-form-list-item-username"><span>filimon</span></div>
+                        <div id="user7-status" class="usual form-user-invite-block"><span
+                                class="form-user-invite-button">ПРИГЛАСИТЬ</span></div>
+                    </div>
+                    <div class="quest-form-list-item usual">
+                        <img class="usual"
+                             src="userimages/avatar-0001.png">
+
+                        <div class="usual quest-form-list-item-username"><span>florencia</span></div>
+                        <div id="user8-status" class="usual form-user-invite-block"><span
+                                class="form-user-invite-button">ПРИГЛАСИТЬ</span></div>
+                    </div>
+                    <div class="quest-form-list-item usual">
+                        <img class="usual"
+                             src="userimages/avatar-0001.png">
+
+                        <div class="usual quest-form-list-item-username"><span>uriy</span></div>
+                        <div id="user9-status" class="usual form-user-invite-block"><span
+                                class="form-user-invite-button">ПРИГЛАСИТЬ</span></div>
+                    </div>
+                    <div class="quest-form-list-item usual">
+                        <img class="usual"
+                             src="userimages/avatar-0001.png">
+
+                        <div class="usual quest-form-list-item-username"><span>alberto</span></div>
+                        <div id="user10-status" class="usual form-user-invite-block"><span
+                                class="form-user-invite-button">ПРИГЛАСИТЬ</span></div>
+                    </div>
+                    <div class="quest-form-list-item usual">
+                        <img class="usual"
+                             src="userimages/avatar-0001.png">
+
+                        <div class="usual quest-form-list-item-username"><span>nicolo</span></div>
+                        <div id="user11-status" class="usual form-user-invite-block"><span
+                                class="form-user-invite-button">ПРИГЛАСИТЬ</span></div>
+                    </div>
+                    <div class="quest-form-list-item usual">
+                        <img class="usual"
+                             src="userimages/avatar-0001.png">
+
+                        <div class="usual quest-form-list-item-username"><span>nina</span></div>
+                        <div id="user12-status" class="usual form-user-invite-block"><span
+                                class="form-user-invite-button">ПРИГЛАСИТЬ</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="quest-form-invite-text usual">
+                <div class="quest-form-invite-text-header usual">
+                    <span class="bottom0">Текст приглашения</span>
+
+                    <div id="text-change-button" class="quest-form-change">
+                        <span>Изменить</span>
+                    </div>
+                </div>
+                <div class="">
+                    <textarea id="invite-text" class="form-input" disabled>
+
+
+                        Привет!
+
+                        Это текст приглашения на встречу.
+
+                        Пока.
+                    </textarea>
+                </div>
+
+            </div>
+        </div>
+        <div class="quest-form-invited usual">
+            <span class="quest-form-filter-top">Будут приглашены</span>
+
+            <div>
+                <div id="invited-users" class="usual quest-form-invite-list shadow-border">
+                </div>
+                <div class="user-events-show-more full-wide shadow-border"><span>ПРИГЛАСИТЬ</span></div>
+            </div>
+        </div>
+    </div>
+
+    <form id="quest-form">
+    </form>
     <div style="height:1px;overflow:hidden;clear:both;"></div>
-</div>
-<div class="content-page usual quest-page">
-
-<div class="quest-form-filter usual">
-    <span class="quest-form-filter-top">Добавить гостей</span>
-
-    <div class="send-input"><input type="text" placeholder="введите имя или почту" class="form-input">
-        <div class="usual form-input-add-button"></div>
-    </div>
-
-
-    <div>
-        <div class="usual quest-form-contact-list shadow-border">
-            <div class="quest-form-list-item usual q-second">
-                <img class="usual"
-                     src="userimages/avatar-0001.png">
-
-                <div class="usual quest-form-list-item-username"><span>Username</span></div>
-                <div id="user1-status" class="usual form-user-invite-block"><span  class="form-user-invite-button">ПРИГЛАСИТЬ</span></div>
-            </div>
-            <div class="quest-form-list-item usual">
-                <img class="usual"
-                     src="userimages/avatar-0001.png">
-
-                <div class="usual quest-form-list-item-username"><span>Username</span></div>
-                <div id="user2-status" class="usual form-user-invite-block"><span  class="form-user-invite-button">ПРИГЛАСИТЬ</span></div>
-            </div>
-            <div class="quest-form-list-item usual q-second">
-                <img class="usual"
-                     src="userimages/avatar-0001.png">
-
-                <div class="usual quest-form-list-item-username"><span>Username</span></div>
-                <div  id="user3-status" class="usual form-user-invite-block"><span  class="form-user-invite-button">ПРИГЛАСИТЬ</span></div>
-            </div>
-            <div class="quest-form-list-item usual">
-                <img class="usual"
-                     src="userimages/avatar-0001.png">
-
-                <div class="usual quest-form-list-item-username"><span>Username</span></div>
-                <div  id="user4-status" class="usual form-user-invite-block"><span  class="form-user-invite-button">ПРИГЛАСИТЬ</span></div>
-            </div>
-            <div class="quest-form-list-item usual q-second">
-                <img class="usual"
-                     src="userimages/avatar-0001.png">
-
-                <div class="usual quest-form-list-item-username"><span>Username</span></div>
-                <div  id="user5-status" class="usual form-user-invite-block"><span  class="form-user-invite-button">ПРИГЛАСИТЬ</span></div>
-            </div>
-            <div class="quest-form-list-item usual">
-                <img class="usual"
-                     src="userimages/avatar-0001.png">
-
-                <div class="usual quest-form-list-item-username"><span>Username</span></div>
-                <div  id="user6-status" class="usual form-user-invite-block"><span  class="form-user-invite-button">ПРИГЛАСИТЬ</span></div>
-            </div>
-            <div class="quest-form-list-item usual q-second">
-                <img class="usual"
-                     src="userimages/avatar-0001.png">
-
-                <div class="usual quest-form-list-item-username"><span>Username</span></div>
-                <div  id="user7-status" class="usual form-user-invite-block"><span  class="form-user-invite-button">ПРИГЛАСИТЬ</span></div>
-            </div>
-            <div class="quest-form-list-item usual">
-                <img class="usual"
-                     src="userimages/avatar-0001.png">
-
-                <div class="usual quest-form-list-item-username"><span>Username</span></div>
-                <div  id="user8-status" class="usual form-user-invite-block"><span  class="form-user-invite-button">ПРИГЛАСИТЬ</span></div>
-            </div>
-            <div class="quest-form-list-item usual">
-                <img class="usual"
-                     src="userimages/avatar-0001.png">
-
-                <div class="usual quest-form-list-item-username"><span>Username</span></div>
-                <div  id="user9-status" class="usual form-user-invite-block"><span  class="form-user-invite-button">ПРИГЛАСИТЬ</span></div>
-            </div>
-            <div class="quest-form-list-item usual">
-                <img class="usual"
-                     src="userimages/avatar-0001.png">
-
-                <div class="usual quest-form-list-item-username"><span>Username</span></div>
-                <div  id="user10-status" class="usual form-user-invite-block"><span  class="form-user-invite-button">ПРИГЛАСИТЬ</span></div>
-            </div>
-            <div class="quest-form-list-item usual">
-                <img class="usual"
-                     src="userimages/avatar-0001.png">
-
-                <div class="usual quest-form-list-item-username"><span>Username</span></div>
-                <div  id="user11-status" class="usual form-user-invite-block"><span  class="form-user-invite-button">ПРИГЛАСИТЬ</span></div>
-            </div>
-            <div class="quest-form-list-item usual">
-                <img class="usual"
-                     src="userimages/avatar-0001.png">
-
-                <div class="usual quest-form-list-item-username"><span>Username</span></div>
-                <div  id="user12-status"  class="usual form-user-invite-block"><span  class="form-user-invite-button">ПРИГЛАСИТЬ</span></div>
-            </div>
-        </div>
-    </div>
-    <div class="quest-form-invite-text usual">
-        <div class="quest-form-invite-text-header usual">
-            <span class="bottom0">Текст приглашения</span>
-
-            <div id="text-change-button"  class="quest-form-change">
-                <span>Изменить</span>
-            </div>
-        </div>
-        <div class="">
-            <textarea id="invite-text" class="form-input" disabled>
-
-
-    Привет!
-
-    Это текст приглашения на встречу.
-
-    Пока.
-            </textarea>
-        </div>
-
-    </div>
-</div>
-<div class="quest-form-invited usual">
-    <span class="quest-form-filter-top">Будут приглашены</span>
-
-    <div>
-        <div id="invited-users" class="usual quest-form-invite-list shadow-border">
-        </div>
-        <div class="user-events-show-more full-wide shadow-border"><span>ПРИГЛАСИТЬ</span></div></div>
-    </div>
-</div>
-
-<form id="quest-form">
-</form>
-<div style="height:1px;overflow:hidden;clear:both;"></div>
 </div>
 
 <div style="height:1px;overflow:hidden;clear:both;"></div>
 </div>
 
 </body>
-<script type="text/javascript">
-    $(document).ready(function(){
-        $(".quest-form-list-item-cross").live('click',function(){
-            var uninviteId = $(this).parent().attr("id")+"-status";
-            $(this).parent().remove();
-            $("#"+uninviteId).children('span').text("ПРИГЛАСИТЬ");
-            $("#"+uninviteId).children('span').toggleClass("form-user-invite-button form-user-already-button");
 
-
-        });
-         $(".form-user-invite-block").click(function(){
-             if ($(this).children('span').hasClass("form-user-invite-button")){
-             var invitedId = $(this).attr("id").replace("-status","") ;
-             $(this).children('span').text("приглашен") ;
-             $(this).children('span').toggleClass("form-user-invite-button form-user-already-button");
-             var newElement = '<div  class="quest-form-list-item usual" '+ 'id="' + invitedId + '">' +
-                     ' <img class="usual" src="userimages/avatar-0001.png"><div class="usual quest-form-list-item-username"><span>'+$(this).prev().text()+'</span>' +
-                     '</div><img  class="' + 'quest-form-list-item-cross"'+' src="'+'images/cross.png">'+'</div>' ;
-
-             $("#invited-users").append(newElement);
-             } ;
-         });
-
-        $("#text-change-button").click(function(){
-            if ($("#text-change-button").children('span').text()=="Изменить"){
-            $("#invite-text").attr("disabled",false);
-            $("#text-change-button").children('span').text("Сохранить");
-            } else {
-                $("#invite-text").attr("disabled",true);
-            $("#text-change-button").children('span').text("Изменить");
-            }
-        });
-
-
-    });
-
-
-
-    function editInviteText(){
-        var textField = document.getElementById('invite-text')
-        if (textField.disabled) {
-            textField.disabled = false
-            textField.aut
-            document.getElementById('text-change-button').innerHTML = '<span>Сохранить</span>'
-        } else [
-            textField.disabled = true ,
-            document.getElementById('text-change-button').innerHTML = '<span>Изменить</span>'
-        ]
-
-    }
-</script>
 </html>
