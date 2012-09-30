@@ -7,9 +7,12 @@
  */
 $(document).ready(function(){
     $('input').click(function(){
-        $('.quest-form-list-item-status').parent('div').hide();
+
+    });
+    function filter(element,filterContainer){
+        $(element).hide();
         var noChecked = true;
-        $('input:checked').each(function(){
+        $(filterContainer+' input:checked').each(function(){
             noChecked = false;
             var checkBox = $(this).attr('name');
             $('.'+checkBox).parent('div').show();
@@ -17,5 +20,23 @@ $(document).ready(function(){
         if (noChecked) {
             $('.quest-form-list-item-status').parent('div').show();
         }
-    });
+    };
 });
+/*
+function datePickerDialog(){
+
+    $("#datepicker").datepicker(
+        "dialog",
+
+        "23.04.2009",
+
+        function (date) {
+
+            $("#startdate").text("начиная с " + date);
+//                $.datepicker.formatDate("@",date) ;
+        },
+        { showButtonPanel:true }
+    );
+
+
+};*/

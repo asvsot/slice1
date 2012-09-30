@@ -4,11 +4,13 @@
     <meta charset="utf-8"/>
     <title>Event Page</title>
     <link type="text/css"
-          href="styles/jquery-ui-1.8.23.custom.css"
+          href="styles/jquery-ui-1.8.24.custom.css"
           rel="stylesheet">
     <script src="js/jquery-1.8.0.min.js"
             type="text/javascript"></script>
-    <script src="js/jquery-ui-1.8.23.custom.min.js"
+    <script src="js/jquery-ui-1.8.24.custom.min.js"
+            type="text/javascript"></script>
+    <script src="js/from-quest.js"
             type="text/javascript"></script>
     <link type="text/css"
           rel="stylesheet"
@@ -16,6 +18,7 @@
           href="styles/main.css">
 </head>
 <body>
+<span id="now" hidden></span>
 <div class="page">
     <div class="header">
         <div class="page-header">
@@ -57,12 +60,13 @@
                     <span class="big-digit">12</span><br>
                 </div>
                 <div class="filter-draft">
+                    <span id="storedtime" hidden></span>
                     <div class="caption"><span>Отображать события</span></div>
-                    <div><img src="images/filterdate.png"><input id="datepicker"
-                                                                 hidden><span id="startdate">начиная с сегодня</span><a href="#">(change)</a>
+                    <div class="filter-date left margin0"><img src="images/filterdate.png"><input id="datepicker" type="text"  hidden
+                                                                 ><span id="startdate">начиная с сегодня</span><a href="#">(change)</a>
                     </div>
-                    <div><input type="checkbox"><span> только активные</span></div>
-                    <div><input type="checkbox"><span> только где я - автор</span></div>
+                    <div class="filter-completed left margin0"><input id="finished" type="checkbox"><span> только активные</span></div>
+                    <div class="filter-completed left margin0"><input id="me-author" type="checkbox" name="my-event"><span> только где я - автор</span></div>
                 </div>
                 <div style="height:1px;overflow:hidden;clear:both;"></div>
             </div>
@@ -78,17 +82,19 @@
                 </div>
                 <div id="user-all-events"
                      class="wide shadow-border">
-                    <div class="wide">
+                    <div class="wide active">
+                        <span class="event-start-time" hidden>1317411533</span>
+                        <span class="event-end-time" hidden>1245144005</span>
                         <img src="userimages/event-small0002.png">
-
                         <div class="draft-event-title"><span>Fotography by Oliver</span></div>
                         <div class="draft-event-text"><span>уже и не жилец в этом телевизионном мире, однако у драмы AMC, по мере приближения к финалу,продолжает расти аудитория.</span>
                         </div>
                         <div class="draft-event-time"><span>Today, 17:45</span></div>
                     </div>
-                    <div class="wide">
+                    <div class="wide active my-event">
+                        <span class="event-start-time" hidden>1317411533</span>
+                        <span class="event-end-time" hidden>1245144005</span>
                         <img src="userimages/event-small0003.png">
-
                         <div class="draft-event-title"><span>Abadoned Psyhiatric</span></div>
                         <div class="draft-event-text">
                             <nobr><span>уже и не жилец в этом телевизионном мире, однако у драмы AMC, по мере приближения к финалу,продолжает расти аудитория.</span>
@@ -96,17 +102,19 @@
                         </div>
                         <div class="draft-event-time"><span>Today, 22:32</span></div>
                     </div>
-                    <div class="wide">
+                    <div class="wide ">
+                        <span class="event-start-time" hidden>1345944005</span>
+                        <span class="event-end-time" hidden>1745144005</span>
                         <img src="userimages/event-small0001.png">
-
                         <div class="draft-event-title"><span>Stephen Baretss photo</span></div>
                         <div class="draft-event-text"><span>уже и не жилец в этом телевизионном мире, однако у драмы AMC, по мере приближения к финалу,продолжает расти аудитория.</span>
                         </div>
                         <div class="draft-event-time"><span>Apr 30 - May 03, 2012</span></div>
                     </div>
-                    <div class="wide">
+                    <div class="wide my-event">
+                        <span class="event-start-time" hidden>1345144005</span>
+                        <span class="event-end-time" hidden>1745144005</span>
                         <img src="userimages/event-small0002.png">
-
                         <div class="draft-event-title"><span>Stephen Baretss photo</span></div>
                         <div class="draft-event-text"><span>уже и не жилец в этом телевизионном мире, однако у драмы AMC, по мере приближения к финалу,продолжает расти аудитория.</span>
                         </div>
@@ -162,26 +170,5 @@
         </div>
     </div>
 </div>
-<script type="text/javascript">
-    $(function () {
-        $.datepicker.setDefaults(
-                $.extend($.datepicker.regional["ru"])
-        );
-        $("#datepicker").datepicker({
-            changeYear:true
-        });
-        $("a").click(function () {
-            $("#datepicker").datepicker(
-                    "dialog",
-                    "23.04.2009",
-                    function (date) {
-                        document.getElementById("startdate").innerHTML = "начиная с " + date;
-                    },
-                    { showButtonPanel:true },
-                    [300, 300]
-            );
-        });
-    });
-</script>
 </body>
 </html>
