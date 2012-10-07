@@ -22,7 +22,7 @@
 <div class="header">
     <div class="page-header">
         <div class="logo">
-            <a href="/"><img src="images/logo.png"></a>
+            <a href="/">Meet</a>
         </div>
         <div class="nav">
             <div class="menu-active"><a class=""
@@ -36,8 +36,8 @@
             <div class="border"></div>
             <div><a href="/">Profile</a></div>
         </div>
-        <div class="login">
-            <a href="/"><img src="images/user-icon.png">Username</a>
+        <div id="username" class="login">
+            <a ><img src="images/user-icon.png">Username</a>
         </div>
 
     </div>
@@ -68,7 +68,7 @@
                 <input name="etbegin"
                        placeholder="11:00"
                        form="event-create-form"
-                       class="event-date-input">
+                       class="event-date-input"> -
                 <input name="edend"
                        id="datepickerEnd"
                        placeholder="16 May"
@@ -85,7 +85,7 @@
                                                             form="event-create-form"
                                                             class="event-place-input">
             </div>
-            <div class="e-category">
+            <div id="e-category">
                 <img src="images/dir-tree-icon.png">
                 <select name="ecategory"
                         required
@@ -98,7 +98,7 @@
                     </option>
                 </select>
             </div>
-            <div class="e-site">
+            <div id="e-site">
                 <img src="images/filtertags.png"><input name="etags"
                                                         placeholder='tags'
                                                         form="event-create-form"
@@ -112,15 +112,16 @@
                 <input type="radio"
                        checked
                        form="event-create-form"
-                       name="privasy"
-                       value="privat"> приватное
+                       name="privacy"
+                       value="private"> приватное
                 <input type="radio"
                        form="event-create-form"
-                       name="privasy"
-                       value="public"> публичное<br>
+                       name="privacy"
+                       value="public"> публичное
                 <input type="checkbox"
                        form="event-create-form"
                        name="catalog"
+                       disabled
                        value=""> разместить в каталоге
             </fieldset>
         </div>
@@ -173,10 +174,6 @@
                        form="event-create-form"
                        name="catalog"
                        value=""> разрешать коментарии<br>
-                <input type="checkbox"
-                       form="event-create-form"
-                       name="catalog"
-                       value=""> уведомлять о новых сообщениях
             </fieldset>
         </div>
         <form id="event-create-form">
@@ -187,7 +184,16 @@
 
         </div>
     </div>
+    <div id="logged-menu" class="slide-menu user-menu">
 
+        <div class="">
+            <a>Настройки</a>
+        </div>
+        <div class="">
+            <a>Выход</a>
+        </div>
+
+    </div>
 </div>
 <div class="footer">
     <div class="footer-menu">

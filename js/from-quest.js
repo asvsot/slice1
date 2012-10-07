@@ -7,6 +7,20 @@
  */
 
 $(document).ready(function(){
+
+    function questfilter(element,filterContainer){
+        $(element).hide();
+        var noChecked = true;
+        $(filterContainer+' input:checked').each(function(){
+            noChecked = false;
+            var checkBox = $(this).attr('name');
+            $('.'+checkBox).show();
+        });
+        if (noChecked) {
+            $(element).show();
+        }
+    };
+
     function eventTabThirdClass(elementClass){
           $(elementClass).removeClass("last-in-row");
           for(var i=2; i<$(elementClass+":visible").length;i=i+3){
@@ -122,28 +136,73 @@ $(document).ready(function(){
     });
 
     //-----------
-
+     // public radio click
+    $('.e-type input').click(function(){
+       if ( $('[value="public"]').is(":checked") ) {
+           $("[name='catalog']").attr("disabled",false);
+       }  else[
+           $("[name='catalog']").attr("disabled",true)
+        ]
+    });
     //выбор даты в фильтрах
-    $(".filter-date").click(function () {
+    $(".filter-date").click(function(){
         datePickerDialog();
 
 
     });
     //---------------------------
+    // Выпадающее меню авторизации
+    $('#login').live('click',function(){
+//        alert('sss');
+        $('.slide-menu').toggle()
+    });
+    // выпадающее меню авторизированного пользователя
+    $('#username').click(function(){
+        $('.slide-menu').toggle();
+    });
 
+    // Всплывающая форма приглашения
+    $('#inspect').click(function(){
+        $("#quest").load('file:///F:/Drupal/HTML/questsf.html'); //input correct url or ajax request
+        $("#quest").toggle();
+
+    });
+    // Всплывающая форма просмотра приглашенных
+    $('#invite').click(function(){
+        $("#quest").load('file:///F:/Drupal/HTML/from-questsf.html'); //input correct url  or ajax request
+        $("#quest").toggle();
+
+    });
+
+    // закрытие всплывающих форм
+    $('#close-form').live('click',function(){
+        $("#quest").empty();
+        $("#quest").toggle();
+
+    });
+    ///-----кнопки коментариев
+    $('.comment-wrapper').hover(function(){
+//        alert('ON');
+        $(this).find('.comment-control').show();
+    },function(){
+//        alert('off');
+        $(this).find('.comment-control').hide();
+    })  ;
     //---draft_05_calendar author filter
     $('#me-author').click(function(){
         dateFilter("#user-all-events>div",".event-start-time",".event-end-time","#storedtime","#finished",false);
         myEvents("#user-all-events>div","#me-author");
     });
 
-    //----maket--------
-
+    //----MORE button draft-events-show-more--------
+    $('.draft-events-show-more').click(function(){
+        alert ('any Ajax action')
+    });
     //---------------------
 
     //--quest.html  filter handler
-    $('.quest-form-filter input').click(function(){
-        eventListFilter('.quest-form-list-item','.quest-form-filter',true);
+    $('.quest-form-filter input').live('click',function(){
+        questfilter('.quest-form-list-item','.quest-form-filter');
         zebra(".quest-form-list");
     });
     //----------------------------
@@ -158,7 +217,7 @@ $(document).ready(function(){
     });
     //---------------------------
     //-------adding to invited list
-    $(".form-user-invite-block").click(function(){
+    $(".form-user-invite-block").live('click',function(){
         if ($(this).children('span').hasClass("form-user-invite-button")){
             var invitedId = $(this).attr("id").replace("-status","") ;
             $(this).children('span').text("приглашен") ;
@@ -171,7 +230,7 @@ $(document).ready(function(){
     });
     //------------------------------
     //------edit/save invite message
-    $("#text-change-button").click(function(){
+    $("#text-change-button").live('click',function(){
         if ($("#text-change-button").children('span').text()=="Изменить"){
             $("#invite-text").attr("disabled",false);
             $("#text-change-button").children('span').text("Сохранить");
@@ -182,7 +241,7 @@ $(document).ready(function(){
     });
     //-----------------------------
     //------processing filter input
-    $("#filter").keyup(function(){
+    $("#filter").live('keyup',function(){
 
         $('.quest-form-contact-list > .quest-form-list-item').show();
         var filterVal = $(this).val();
@@ -192,7 +251,7 @@ $(document).ready(function(){
     });
     //---------------------------
     //---adding matches to invited list
-    $('.form-input-add-button').click(function(){
+    $('.form-input-add-button').live('click',function(){
         $('.quest-form-contact-list > .quest-form-list-item:visible').children(".form-user-invite-block").click();
         zebra("#invited-users");
     });

@@ -10,6 +10,8 @@
             type="text/javascript"></script>
     <script src="js/jquery-ui-1.8.24.custom.min.js"
             type="text/javascript"></script>
+    <script src="js/from-quest.js"
+            type="text/javascript"></script>
     <link type="text/css"
           rel="stylesheet"
           media="all"
@@ -20,7 +22,7 @@
 <div class="header">
     <div class="page-header">
         <div class="logo">
-            <a href="/"><img src="images/logo.png"></a>
+            <a href="/">Meet</a>
         </div>
         <div class="nav">
             <div class="menu-active"><a class=""
@@ -34,8 +36,8 @@
             <div class="border"></div>
             <div><a href="/">Profile</a></div>
         </div>
-        <div class="login">
-            <a href="/"><img src="images/user-icon.png">Username</a>
+        <div id="username" class="login">
+            <a ><img src="images/user-icon.png">Username</a>
         </div>
 
     </div>
@@ -100,93 +102,128 @@
         <a href=""><img src="images/vk.png"></a>
         <a href=""><img src="images/mail.png"></a>
     </div>
-    <div id="content-all-comments">
+    <div id="content-all-comments" class="usual">
         <div class="content-comments-header">
-            <a href="/"><h2>Коментарии(39)</h2></a>
+            <a href="/">Коментарии(39)</a>
+            <a class="comment-notification-link" href="/">получать уведомления</a>
         </div>
-        <ol id="content-comments-list">
-            <li id="comment-1">
-                <div class="">
-                    <img src="images/people-icon.png"
-                         class="ava-icon">
-                    <a href="">user</a>
-                    <span class="content-comments-datetime">13 апреля 2012,08:13</span>
-                </div>
-                <div class="">
-                    <span>Самая изысканная современная музыка - для тех, кто знает себе цену и готов получать от жизни еще больше.</span>
-                </div>
-            </li>
-            <li id="comment-2">
-                <div class="1">
-                    <img src="images/people-icon.png"
-                         class="ava-icon">
-                    <a href="">fdgdfg</a>
-                    <span class="content-comments-datetime">13 апреля 2012,08:13</span>
-                </div>
-                <div class="1">
-                    <span>Самая изысканная современная музыка - для тех, кто знает себе цену и готов получать от жизни еще больше.</span>
-                </div>
-                <ol>
-                    <li id="comment-3">
-                        <div class="">
+        <div class="shadow-border coment-list-wrapper">
+            <ol id="content-comments-list">
+                <li id="comment-1">
+                    <div class="usual comment-wrapper">
+                        <div class="usual full-wide">
                             <img src="images/people-icon.png"
                                  class="ava-icon">
-                            <a href="">fsrs</a>
-                            <span class="content-comments-datetime">13 апреля 2012,08:13</span>
+                            <br>
+                            <a href="">user</a>
+                            <span class="comment-header">13 апреля 2012,08:13</span>
+                            <div class="comment-control"><a href="">пожаловаться</a> | <input type="submit" value="ответить"></div>
                         </div>
-                        <div class="">
-                            <span>SSSSSSSSSS SSSSSSSSS SSSSSSSSSSSSSS</span>
+                        <div class="usual ">
+                            <span>Web Source Technology is an International Company which has recently opened a branch office in Dnepropetrovsk and is looking for AS3 С++,С#,.NET
+                    </span>
                         </div>
-                    </li>
-                    <li id="comment-4">
-                        <div class="">
+                    </div>
+                </li>
+                <li id="comment-2">
+                    <div class="usual comment-wrapper">
+                        <div class="usual full-wide">
                             <img src="images/people-icon.png"
                                  class="ava-icon">
+                            <br>
+                            <a href="">fdgdfg</a>
+                            <span class="comment-header">13 апреля 2012,08:13</span>
+                            <div class="comment-control"><a href="">пожаловаться</a> | <input type="submit" value="ответить"></div>
+                        </div>
+                        <div class="usual"><span>Web Source Technology is an International Company which has recently opened a branch office in Dnepropetrovsk and is looking for AS3 С++,С#,.NET
+                    </span>
+                        </div>
+                    </div>
+                    <ol>
+                        <li id="comment-3">
+                            <div class="usual comment-wrapper">
+                                <div class="usual full-wide">
+                                    <img src="images/people-icon.png"
+                                         class="ava-icon">
+                                    <br>
+                                    <a href="">fsrs</a>
+                                    <span class="comment-header">13 апреля 2012,08:13</span>
+                                    <div class="comment-control"><a href="">пожаловаться</a> | <input type="submit" value="ответить"></div>
+                                </div>
+                                <div class="usual "><span>Web Source Technology is an International Company which has recently opened a branch office in Dnepropetrovsk and is looking for AS3 С++,С#,.NET</span>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li id="comment-4">
+                            <div class="usual comment-wrapper">
+                                <div class="usual full-wide">
+                                    <img src="images/people-icon.png"
+                                         class="ava-icon">
+                                    <br>
+                                    <a href="">fsrs</a>
+                                    <span class="comment-header">13 апреля 2012,08:13</span>
+                                    <div class="comment-control"><a href="">пожаловаться</a> | <input type="submit" value="ответить"></div>
+                                </div>
+                                <div class="usual "><span>Web Source Technology is an International Company which has recently opened a branch office in Dnepropetrovsk and is looking for AS3 С++,С#,.NET</span>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ol>
+                </li>
+                <li id="comment-5">
+                    <div class="usual comment-wrapper">
+                        <div class="usual  full-wide">
+                            <img src="images/people-icon.png"
+                                 class="ava-icon">
+                            <br>
                             <a href="">fsrs</a>
-                            <span class="content-comments-datetime">13 апреля 2012,08:13</span>
+                            <span class="comment-header">13 апреля 2012,08:13</span>
+                            <div class="comment-control"><a href="">пожаловаться</a> | <input type="submit" value="ответить"></div>
                         </div>
-                        <div class="">
-                            <span>SSSSSSSSSS SSSSSSSSS SSSSSSSSSSSSSS</span>
+                        <div class="usual ">
+                            <span>Web Source Technology is an International Company which has recently opened a branch office in Dnepropetrovsk and is looking for AS3 С++,С#,.NET</span>
                         </div>
-                    </li>
-                </ol>
-            </li>
-            <li id="comment-5">
-                <div class="">
-                    <img src="images/people-icon.png"
-                         class="ava-icon">
-                    <a href="">fsrs</a>
-                    <span class="content-comments-datetime">13 апреля 2012,08:13</span>
-                </div>
-                <div class="">
-                    <span>SSSSSSSSSS SSSSSSSSS SSSSSSSSSSSSSS</span>
-                </div>
-            </li>
-            <li id="comment-6">
-                <div class="">
-                    <img src="images/people-icon.png"
-                         class="ava-icon">
-                    <a href="">fsrs</a>
-                    <span class="content-comments-datetime">13 апреля 2012,08:13</span>
-                </div>
-                <div class="">
-                    <span>SSSSSSSSSS SSSSSSSSS SSSSSSSSSSSSSS</span>
-                </div>
-
-            </li>
-            <li id="comment-7">
-                <div class="">
-                    <img src="images/people-icon.png"
-                         class="ava-icon">
-                    <a href="">fsrs</a>
-                    <span class="content-comments-datetime">13 апреля 2012,08:13</span>
-                </div>
-                <div class="">
-                    <span>SSSSSSSSSS SSSSSSSSS SSSSSSSSSSSSSS</span>
-                </div>
-            </li>
-        </ol>
-
+                    </div>
+                </li>
+                <li id="comment-6">
+                    <div class="usual comment-wrapper">
+                        <div class="usual  full-wide">
+                            <img src="images/people-icon.png"
+                                 class="ava-icon">
+                            <br>
+                            <a href="">fsrs</a>
+                            <span class="comment-header">13 апреля 2012,08:13</span>
+                            <div class="comment-control"><a href="">пожаловаться</a> | <input type="submit" value="ответить"></div>
+                        </div>
+                        <div class="usual ">
+                            <span>Web Source Technology is an International Company which has recently opened a branch office in Dnepropetrovsk and is looking for AS3 С++,С#,.NET</span>
+                        </div>
+                    </div>
+                </li>
+                <li id="comment-7">
+                    <div class="usual comment-wrapper last">
+                        <div class="usual  full-wide">
+                            <img src="images/people-icon.png"
+                                 class="ava-icon">
+                            <br>
+                            <a href="">fsrs</a>
+                            <span class="comment-header">13 апреля 2012,08:13</span>
+                            <div class="comment-control"><a href="">пожаловаться</a> | <input type="submit" value="ответить"></div>
+                        </div>
+                        <div class="usual">
+                            <span>Web Source Technology is an International Company which has recently opened a branch office in Dnepropetrovsk and is looking for AS3 С++,С#,.NET</span>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+            <div style="height:1px;overflow:hidden;clear:both;"></div>
+        </div>
+        <div class="new-comment">
+            <textarea class="shadow-border" placeholder="submit a comment"></textarea>
+            <input type="submit" value="Post">
+        </div>
     </div>
     <div style="height:1px;overflow:hidden;clear:both;">
 
@@ -268,7 +305,16 @@
     <div class="user-events-show-more full-wide shadow-border"><span>Весь список</span></div>
 
 </div>
+<div id="logged-menu" class="slide-menu user-menu">
 
+    <div class="">
+        <a>Настройки</a>
+    </div>
+    <div class="">
+        <a>Выход</a>
+    </div>
+
+</div>
 </div>
 <div class="footer">
     <div class="footer-menu">

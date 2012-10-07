@@ -6,21 +6,10 @@
  * To change this template use File | Settings | File Templates.
  */
 $(document).ready(function(){
-    $('input').click(function(){
+    $('input').live('click',function(){
 
     });
-    function filter(element,filterContainer){
-        $(element).hide();
-        var noChecked = true;
-        $(filterContainer+' input:checked').each(function(){
-            noChecked = false;
-            var checkBox = $(this).attr('name');
-            $('.'+checkBox).parent('div').show();
-        });
-        if (noChecked) {
-            $('.quest-form-list-item-status').parent('div').show();
-        }
-    };
+
 });
 /*
 function datePickerDialog(){
