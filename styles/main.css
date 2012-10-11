@@ -525,12 +525,11 @@ body {
 }
 
 .main-content-block {
-    position: relative;
-    float: left;
     width: 295px;
     padding: 0;
-    margin-right: 52px;
+    margin-right: 53px;
     margin-bottom: 24px;
+    border-top: 1px solid #C7290C;
 }
 
 .last-in-row {
@@ -550,17 +549,17 @@ body {
     text-transform: uppercase;
     background-color: #de6556;
     font-size: 20px;
-    border-top: 1px solid #C7290C;
+    border-top: 1px solid #ffffff;
     color: #ffffff;
 }
 
 .main-content-block-header hr {
-    display: block;
-    position: absolute;
+    /*display: block;*/
+    /*position: absolute;*/
     top: 0;
     margin: 0;
     background-color: #ffffff;
-    border: 0;
+    border: none;
     height: 1px;
     width: 295px;
 }
@@ -649,6 +648,10 @@ body {
     margin-bottom: 0 !important;
     background-color: #f2f0f0;
     padding-bottom: 5px;
+}
+
+*+html .activity-event-item {
+    width: 725px;
 }
 
 .hr {
@@ -1740,13 +1743,8 @@ body {
     /*height: inherit;*/
     padding-top: 50px;
 }
-.shadow-border {
-    border: 1px solid #a3a3a3 !important;
-}
 
 *|html .shadow-border {
-    border: none !important;
-    /*border: 1px solid #a3a3a3 !important;*/
     -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Для Firefox */
     -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Для Safari и Chrome */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Параметры тени */
