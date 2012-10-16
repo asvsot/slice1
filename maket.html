@@ -33,7 +33,7 @@
 
             </div>
             <div class="login">
-                <div><a href="/">Sign Up</a></div>
+                <div><a href="register.html">Sign Up</a></div>
                 <div class="border"></div>
                 <div><a id="login" >Login In</a></div>
             </div>
@@ -46,7 +46,54 @@
             <div><a href="/">Business</a></div>
             <div><a href="/">Entertainment</a></div>
             <div class="last"><a href="/">Special Offers</a></div>
-            <div class="content-header-event last"><img src="images/event-logo.png"></div>
+            <div class="content-header-event last"><a href="/"><img src="images/event-logo.png"></a></div>
+        </div>
+        <div class="content-right-sidebar">
+            <div class="usual search-input">
+                <input placeholder="search"
+                       type="text"
+                       class="usual search-text">
+                <input type="submit"
+                       name="search"
+                       class="search-submit"
+                       value="">
+            </div>
+            <div class="usual filter">
+                <div class="filter-caption"><h2>Фильтровать&nbsp;события</h2></div>
+                <!--<div class="filter-date"></div>
+               <div class="filter-location"></div>
+               <div class="filter-completed"></div>-->
+                <span id="storedtime" hidden></span>
+                <div class="filter-date"><img src="images/filterdate.png"><span id="startdate">начиная с сегодня </span><a href="#">(change)</a>
+                </div>
+                <div class="filter-location"><img src="images/filterlocation.png"><span id="location">Киев, Украина </span><a href="">(change)</a>
+                </div>
+                <div class="filter-completed"><input id="finished" type="checkbox" checked><span>отображать завершенные</span></div>
+                <div class="filter-tags"><img src="images/filtertags.png"><span>популярные теги:</span></div>
+                <div class="filter-loaded-tags">
+                    <a href="/">tag,&nbsp;</a>
+                    <a href="/">tag,&nbsp;</a>
+                    <a href="/">tag,&nbsp;</a>
+                    <a href="/">tag,&nbsp;</a>
+                    <a href="/">tag,&nbsp;</a>
+                    <a href="/">tag,&nbsp;</a>
+                    <a href="/">tag,&nbsp;</a>
+                    <a href="/">tag,&nbsp;</a>
+                    <a href="/">tag,&nbsp;</a>
+                    <a href="/">tag,&nbsp;</a>
+                    <a href="/">tag,&nbsp;</a>
+                    <a href="/">tag,&nbsp;</a>
+                    <a href="/">tag,&nbsp;</a>
+                    <a href="/">tag,&nbsp;</a>
+                    <a href="/">tag,&nbsp;</a>
+                    <a href="/">tag,&nbsp;</a>
+                    <a href="/">tag,&nbsp;</a>
+                    <a href="/">tag,&nbsp;</a>
+                    <a href="/">tag,&nbsp;</a>
+                    <a href="/">tag,&nbsp;</a>
+                </div>
+            </div>
+
         </div>
         <div class="content-page">
             <div class="event-tab shadow-border">
@@ -139,53 +186,7 @@
             </div>
             <div style="height:1px;overflow:hidden;clear:both;"></div>
         </div>
-        <div class="content-right-sidebar">
-            <div class="usual search-input">
-                <input placeholder="search"
-                       type="text"
-                       class="usual search-text">
-                <input type="submit"
-                       name="search"
-                       class="search-submit"
-                       value="">
-            </div>
-            <div class="usual filter">
-                <div class="filter-caption"><h2>Фильтровать&nbsp;события</h2></div>
-                <!--<div class="filter-date"></div>
-               <div class="filter-location"></div>
-               <div class="filter-completed"></div>-->
-                <span id="storedtime" hidden></span>
-                <div class="filter-date"><img src="images/filterdate.png"><span id="startdate">начиная с сегодня </span><a href="#">(change)</a>
-                </div>
-                <div class="filter-location"><img src="images/filterlocation.png"><span id="location">Киев, Украина </span><a href="">(change)</a>
-                </div>
-                <div class="filter-completed"><input id="finished" type="checkbox" checked><span>отображать завершенные</span></div>
-                <div class="filter-tags"><img src="images/filtertags.png"><span>популярные теги:</span></div>
-                <div class="filter-loaded-tags">
-                    <a href="/">tag,&nbsp;</a>
-                    <a href="/">tag,&nbsp;</a>
-                    <a href="/">tag,&nbsp;</a>
-                    <a href="/">tag,&nbsp;</a>
-                    <a href="/">tag,&nbsp;</a>
-                    <a href="/">tag,&nbsp;</a>
-                    <a href="/">tag,&nbsp;</a>
-                    <a href="/">tag,&nbsp;</a>
-                    <a href="/">tag,&nbsp;</a>
-                    <a href="/">tag,&nbsp;</a>
-                    <a href="/">tag,&nbsp;</a>
-                    <a href="/">tag,&nbsp;</a>
-                    <a href="/">tag,&nbsp;</a>
-                    <a href="/">tag,&nbsp;</a>
-                    <a href="/">tag,&nbsp;</a>
-                    <a href="/">tag,&nbsp;</a>
-                    <a href="/">tag,&nbsp;</a>
-                    <a href="/">tag,&nbsp;</a>
-                    <a href="/">tag,&nbsp;</a>
-                    <a href="/">tag,&nbsp;</a>
-                </div>
-            </div>
 
-        </div>
         <div id="login-window" class="slide-menu">
             <form>
                 <div>

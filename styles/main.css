@@ -123,10 +123,12 @@ body {
 
 .login {
     position: absolute !important;
-    font-size: 12pt;
+    /*width: 150px;*/
+    font-size: 1em;
     right: 30px;
     color: #ffffff;
     text-decoration: none;
+
 }
 
 .login div {
@@ -135,15 +137,20 @@ body {
 }
 
 .login a {
-    display: inline-block;
-    margin-top: 13px;
+    /*display: inline-block;*/
+    line-height: 43px ;
+    /*margin-top: 13px;*/
     color: #ffffff;
     text-decoration: none;
     cursor: pointer;
 }
 
 .login img {
-    float: left;
+    /*position: absolute ;display: block;*/
+    /*width: 20px;*/
+    /*bottom: 5px;*/
+
+    margin-top: 10px;
     margin-right: 3px;
 }
 
@@ -160,6 +167,8 @@ body {
     background-image: url("../images/content-header.png");
     height: 43px;
     margin: 0 auto;
+
+
 }
 
 .content-header div {
@@ -168,9 +177,10 @@ body {
     position: relative;
     float: left;
     font-size: 18pt;
-    padding: 10px;
+    padding: 0 10px 0 10px;
     border-right: 1px solid #ffffff;
-    height: 23px;
+    height: 43px;
+    line-height: 43px;
 }
 
 .content-header a {
@@ -192,25 +202,25 @@ body {
 .content-header-event {
     padding: 0 !important;
     position: absolute !important;
+    line-height: 43px;
     right: 15px;
-    bottom: 12px;
+    bottom: 0;
+    text-align: right !important;
 }
 
 .content-header-event div {
     color: #C7290C;
     padding: 0;
     text-align: right;
-    width: 150px;
+    /*width: 100px;*/
     font-size: 12pt;
     font-family: "Helvetica Neue";
     cursor: pointer;
 }
 
 .content-header-event img {
-    /*display: block;*/
-    float: right;
-    padding-top: 5px;
-    padding-left: 3px;
+    /*padding: 0 3px 3px 3px;*/
+    /*border: 1px solid red;*/
 
 }
 
@@ -226,11 +236,12 @@ body {
 }
 
 .content-right-sidebar {
-    width: 260px;
+    width: 250px;
     min-height: 600px;
-    position: absolute;
+    position: relative;
     right: 0;
-    top: 50px;
+    top: 7px;
+    float: right;
     margin: 0 auto;
     margin-top: 15px;
 }
@@ -243,8 +254,8 @@ body {
     padding-bottom: 5px;
     width: 215px;
     height: 23px;
-    background-image: url("../images/serch-wrapp.png");
-    background-repeat: no-repeat;
+
+    background: url("../images/search-glass.png") 193px 6px no-repeat,  url("../images/serch-wrapp.png") no-repeat ;
     text-align: left;
     right: 0;
 }
@@ -285,12 +296,13 @@ body {
 
 .search-submit {
     /*float: right;*/
+    /*display: no;*/
     width: 17px;
     height: 17px;
     margin: 5px;
     padding: 0;
     border: 0;
-    background: transparent url("../images/search-glass.png") no-repeat left top;
+    background: transparent;
     text-indent: -1000em;
     cursor: pointer;
 }
@@ -298,7 +310,7 @@ body {
 .filter {
     /*position: inherit;*/
     /*padding-top: 10px;*/
-    padding-left: 15px;
+    /*padding-left: 5px;*/
     color: #505050;
     text-align: left;
     font-size: 11pt;
@@ -318,6 +330,7 @@ body {
 }
 
 .filter-date {
+    line-height: 30px;
     cursor: pointer;
 }
 
@@ -394,6 +407,8 @@ body {
 }
 
 .footer-menu ul {
+    font-family: Verdana;
+    FONT-SIZE: 10pt;
     padding-left: 0;
     display: inline;
     list-style-position: inside;
@@ -406,8 +421,10 @@ body {
 }
 
 .footer-menu span {
-    text-shadow: #000000 1px -1px 1px;
+    font-family: Arial ;
+    text-shadow:0px 1px 1px #000000 ;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .event-tab {
@@ -525,11 +542,31 @@ body {
 }
 
 .main-content-block {
+    position: relative;
     width: 295px;
     padding: 0;
     margin-right: 53px;
     margin-bottom: 24px;
     border-top: 1px solid #C7290C;
+}
+
+.main-content-block-time {
+    position: absolute !important;
+    top: 177px;
+    right: 7px;
+    width: 283px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 1.5em;
+    color: #ffffff;
+    background: #000000;
+    background: rgba(0,0,0,0.5);
+    display: none;
+}
+
+.main-content-block-time:hover {
+
 }
 
 .last-in-row {
@@ -547,7 +584,7 @@ body {
     padding-top: 8px;
     text-align: center;
     text-transform: uppercase;
-    background-color: #de6556;
+    background-color: #C7290C;
     font-size: 20px;
     border-top: 1px solid #ffffff;
     color: #ffffff;
@@ -722,7 +759,7 @@ body {
     position: absolute;
     right: 3px;
     top: 5px;
-    color: #C7290C;
+    color: #575956;
     font-size: 11pt;
     font-style: italic;
 }
@@ -731,27 +768,67 @@ body {
     color: #a99b4d;
 }
 
+.username-mid {
+  font-size: 16pt;
+}
+
 .big-digit {
+
     color: #565656;
-    font-size: 22px;
+    font-size: 16pt;
 }
 
 .small-text {
-    font-size: 12px;
+    line-height: 16px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 8pt;
     color: #565656;
+    margin: 0 !important;
+
+}
+
+.author  {
+    border-bottom: 4px solid #c41e00;
+}
+
+.participant {
+    border-bottom: 4px solid #ff9f00;
+}
+
+.user-info-right-sidebar {
+    width: 230px !important;
+    margin-top: 0 !important;
 }
 
 #user-info-left {
-    float: left;
-    text-align: center;
+    /*float: left;*/
+    /*text-align: center;*/
+    height: 82px;
     padding: 0;
     margin: 0;
-    width: 80px;
+    padding: 20px 10px;
+    margin-right: 5px;
+    margin-top: 16px;
+    width: 210px;
     top: -15px;
+
+
+}
+.grey {
+    background-color: #dedddd;
+}
+.white {
+    background-color: #ffffff;
 }
 
-#user-bar-left  img {
-    padding-top: 8px;
+#user-info-left div span,#user-info-left div a {
+  margin-left: 20px;
+  text-decoration: none;
+
+}
+
+#user-info-left  img {
 
     float: left;
 }
@@ -763,41 +840,45 @@ body {
 
 #user-bar-left {
     float: left;
-    width: 220px;
+    width: 240px;
     top: 0;
     margin: 0;
 }
 
 .filter-draft {
-    position: relative;
-    float: left;
+    /*position: relative;*/
+    /*float: left;*/
     padding-top: 15px;
     padding-left: 0;
     margin: 0;
 }
 
 .filter-draft  div {
-    float: left;
+    /*float: left;*/
+    position: relative;
     font-size: 11pt;
     margin-top: 1px;
     margin-bottom: 1px;
     min-height: 30px;
     color: #808080;
+    text-align: left;
 }
 
 .filter-draft div img {
     position: relative;
-    top: -9px;
-    float: left;
+    top: 7px;
+    /*float: left;*/
     left: -3px;
-    margin-right: 10px;
+    margin-right: 12px;
 }
 
 .filter-draft div input {
+    position: relative;
+    top: 2px;
     margin-right: 20px;
     margin-top: 5px;
     margin-left: 0;
-    float: left;
+    /*float: left;*/
 }
 
 .filter-draft a {
@@ -806,7 +887,7 @@ body {
 }
 
 .caption {
-    font-size: 20px;
+    font-size: 12pt;
     color: #565656 !important;
 }
 
@@ -817,7 +898,7 @@ body {
 }
 
 .left {
-    margin: 0 0 10px !important;
+    /*margin: 0 0 10px !important;*/
 }
 
 .wide {
@@ -869,6 +950,7 @@ body {
 
 .event-caption-input {
     font-size: 22px;
+    width: 590px;
 }
 
 .event-date-input {
@@ -1174,19 +1256,22 @@ body {
 }
 
 #user-info div {
-    position: relative;
-    text-align: center;
-    width: 100%;
+
 }
 
 #user-info {
-    position: relative;
-    padding-top: 20px;
-    padding-left: 0;
-    padding-right: 0;
-    float: left;
-    margin: 0 auto;
+    height: 82px;
+    padding: 0;
+    margin: 0;
+    padding: 20px 10px;
+    margin-right: 5px;
+    margin-top: 16px;
+    width: 210px;
+    top: -15px;
+    background-color: #ffffff;
 }
+
+
 
 .user-name {
     color: #a99b4d;
@@ -1207,7 +1292,6 @@ body {
     position: relative;
     float: left;
     right: 0;
-    width: 260px;
     text-align: center;
     margin-bottom: 5px;
     margin-top: 15px;
@@ -1216,7 +1300,7 @@ body {
 #user-events div, #user-all-events div {
     position: relative;
     float: left;
-    width: 260px;
+    width: 250px;
     padding: 0;
     height: 52px;
     background-color: #dedddd;
@@ -1229,12 +1313,12 @@ body {
     float: left !important;
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 12pt;
     border: 0;
     height: 20px;
     position: relative;
     background: none;
-    width: 210px;
+    width: 190px;
     margin-top: 4px;
 }
 
@@ -1279,7 +1363,9 @@ body {
 }
 
 .user-event-title {
-    font-size: 20px !important;
+    text-align: center;
+    font-size: 1.1em !important;
+    font-weight: bold;
     color: #797979;
 }
 
@@ -1300,12 +1386,19 @@ body {
     color: #C7290C;
 }
 
-.event-owner-selects-wrapper div {
-    margin-right: 15px;
+.event-owner-selects-wrapper>div {
+    /*margin-right: 15px;*/
+    width: 155px;
+    overflow: hidden;
 }
 
 .event-owner-select {
+    width: 100px;
+    border: none;
+    background: #ededed;
     color: #000000;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .profile-main-description {
@@ -1322,7 +1415,7 @@ body {
     font-size: 12px;
     float: left;
     color: #C7290C;
-    margin-left: 5px;
+    margin-left: 15px;
     border-radius: 2px;
     margin-bottom: 5px;
     border: 0 !important;
@@ -1339,22 +1432,26 @@ body {
     width: 400px;
 }
 
+.profile-main-count div {
+    width: 75px;
+}
+
 .first-event-counter {
-    border-bottom: 3px solid #C7290C;
+    /*border-bottom: 3px solid #C7290C;*/
+    display: inline;
     font-size: 18pt;
     margin-left: 3px;
-    width: 58px;
+
+    /*width: 80px;*/
     height: 25px;
 }
 
-.first-event-counter sup, .second-event-counter sup {
-    font-size: 7pt !important;
-}
+
 
 .second-event-counter {
     height: 25px;
-    width: 58px;
-    border-bottom: 3px solid orange;
+    display: inline;
+    /*border-bottom: 3px solid orange;*/
     font-size: 18pt;
     margin-left: 3px;
 }
@@ -1748,4 +1845,64 @@ body {
     -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Для Firefox */
     -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Для Safari и Chrome */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Параметры тени */
+}
+
+.reg-inputs {
+    width: 440px;
+    margin: 20px auto;
+    /*border: 1px solid red;*/
+    padding: 30px;
+    background: #ffffff;
+}
+
+.reg-inputs h2 {
+    margin: 10px 0;
+}
+
+.reg-inputs>input {
+    border-radius: 5px;
+    font-size: 1.3em;
+    height: 1.5em;
+    margin:15px 10px 15px 0;
+    width: 200px;
+
+}
+
+.reg-inputs * {
+
+    color: #696969;
+}
+
+#email  {
+    width: 420px;
+}
+
+#terms>div {
+    width: 290px;
+
+}
+
+#terms {
+    position: relative;
+}
+
+#terms input[type='submit'] {
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    right: 15px;
+    top: 0;
+}
+
+.center-text {
+    text-align: center;
+    color: #797979;
+    font-size: 1em;
+}
+
+.active-events {
+    color: #C7290C;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding-top: 10px;
 }

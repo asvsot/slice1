@@ -8,6 +8,12 @@
 
 $(document).ready(function(){
 
+    $('.main-content-block').hover(function(){
+        $(this).children('.main-content-block-time').show(100);
+    }, function(){
+        $(this).children('.main-content-block-time').hide();
+    });
+
     function questfilter(element,filterContainer){
         $(element).hide();
         var noChecked = true;
