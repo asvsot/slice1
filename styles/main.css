@@ -430,42 +430,88 @@ body {
 .event-tab {
     position: relative;
     width: 240px;
-    min-height: 430px;
+    /*min-height: 430px;*/
     background-color: #ffffff;
     border: 1px solid #b2b2b2;
     padding-top: 12px;
-    float: left;
-    margin: 1px;
-    margin-right: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    /*margin: 1px;*/
+    cursor: pointer;
 }
+
+.main-page-tab {
+    margin-bottom: 25px;
+    height: 297px;
+}
+
+.main-page-col3 {
+    margin-right: 45px !important;
+
+}
+
+.main-event-tags {
+    height: 30px ;
+    line-height: 30px;
+    overflow: hidden;
+    padding:0 15px !important;
+}
+.main-content-popular-tags a,
+.event-tags a {
+    text-decoration: none;
+    color: #505050;
+    font-style: italic;
+}
+
+.filter-loaded-tags a:hover,
+.main-content-popular-tags a:hover,
+.event-tags a:hover {
+    text-decoration: underline;
+}
+
 
 .event-tab div {
     position: relative;
+    overflow: hidden;
 }
 
 .event-tab img {
     display: block;
-    margin: 0 auto;
+    margin-left: 13px;
+
 }
 
 .img-event-date {
-    top: -17px;
-    margin: 0 auto;
+    position: absolute !important;
+    top: 198px;
+
+    left: 12px;
     width: 215px;
     color: #ffffff;
     text-shadow: #000000 2px -1px 1px;
     background: rgb(0, 0, 0); /*на случай, если следующая строка не сработает*/
     background: rgba(0, 0, 0, 0.5);
     text-align: center;
+    height: 18px;
+}
+
+*|html .img-event-date {
+     left: 13px;
 }
 
 .event-caption {
     font-size: 28px;
     border-bottom: 1px solid #d6d6d6;
     padding-left: 14px;
-    padding-bottom: 12px;
+    /*top: -17px;*/
     color: #505050;
+    height: 60px;
+    width: 226px;
+    line-height: 60px;
+}
+
+.event-caption span{
+    height: 60px;
+    overflow: hidden;
 }
 
 .event-label {
@@ -505,6 +551,7 @@ body {
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 14px;
+    padding-right: 14px;
 }
 
 .event-tags img {
@@ -523,6 +570,7 @@ body {
     padding-top: 6px;
     padding-bottom: 6px;
     text-align: center;
+    height: 18px;
 }
 
 .entertainment {
@@ -615,13 +663,13 @@ body {
     float: left;
 }
 
-.main-content-popular-tags a {
+.more-tags {
     text-decoration: none;
-    color: #C7290C;
+    color: #C7290C !important;
 }
 
 .main-content-popular-tags {
-    margin-bottom: 25px;
+
 }
 
 .right {
@@ -758,7 +806,7 @@ body {
 .activity-event-time {
     position: absolute;
     right: 3px;
-    top: 5px;
+    top: 10px;
     color: #575956;
     font-size: 11pt;
     font-style: italic;
@@ -942,7 +990,7 @@ body {
     color: #C7290C;
     border-radius: 2px;
     margin-bottom: 5px;
-    border: 0 !important;
+    border: 1px solid transparent !important;
     cursor: pointer;
     text-align: center;
     bottom: 0;
@@ -1388,7 +1436,9 @@ body {
 
 .event-owner-selects-wrapper>div {
     /*margin-right: 15px;*/
+    position: relative;
     width: 155px;
+    margin-right: 10px;
     overflow: hidden;
 }
 
@@ -1687,8 +1737,10 @@ body {
     text-align: center;
     width: 100px;
     padding: 15px;
+
     background-color: #ffffff;
     cursor: pointer;
+    border: 1px solid transparent;
 }
 
 .site-slogan-signature {
@@ -1864,7 +1916,8 @@ body {
     font-size: 1.3em;
     height: 1.5em;
     margin:15px 10px 15px 0;
-    width: 200px;
+    width: 195px;
+    padding-left: 7px;
 
 }
 
@@ -1906,3 +1959,74 @@ body {
     font-weight: bold;
     padding-top: 10px;
 }
+
+.main-content-marg {
+    /*padding-right: 200px !important;*/
+    width: 836px !important;
+}
+
+
+
+.main-show-more {
+    border: 1px solid #b2b2b2 !important;
+    color: #797979;
+    font-size: 2em;
+    margin-top: 21px ;
+    height:635px !important;
+    width: 120px;
+    /*margin-right: 35px;*/
+    line-height: 640px;
+    float: right;
+}
+
+.main-show-more:hover,
+.main-eventplus-button:hover,
+.event-tab:hover,
+.draft-events-show-more:hover{
+    border: 1px solid #8a7a55 !important;
+}
+
+.page-col3 {
+    width: 240px;
+    margin-right: 10px;
+
+}
+
+.top-white-arrow {
+    padding-top: 10px;
+}
+
+.down {
+    padding: 0 !important;
+    padding-bottom: 10px !important;
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.owner-select>img {
+    position: absolute;
+    top: 9px;
+    right: 12px;
+    /*background: url("../images/list-black-arrow.png") 50px  no-repeat;*/
+    /*z-index: -1;*/
+}
+
+.empty-a, .empty-a *{
+    /*border: 0px !important;*/
+    text-decoration: none;
+}
+
+.events-wrp {
+    height: 180px;
+}
+
+.hilited:hover .event-caption,
+.hilited:hover .event-cat,
+.hilited:hover img{
+    background: #dedddd;
+    color: #505050;
+}
+

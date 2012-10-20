@@ -8,6 +8,16 @@
 
 $(document).ready(function(){
 
+    $('.event-owner-select').change(function(){
+
+        var leftPadd = $(this).children('option:selected').text().length
+//        alert($char.width)
+        leftPadd = leftPadd*7.5 ;
+        var right = 55 - leftPadd;
+         $(this).parent().next('.arrow').css("right",right+"px")
+
+    });
+
     $('.main-content-block').hover(function(){
         $(this).children('.main-content-block-time').show(100);
     }, function(){
@@ -165,6 +175,7 @@ $(document).ready(function(){
     // выпадающее меню авторизированного пользователя
     $('#username').click(function(){
         $('.slide-menu').toggle();
+        $('.top-white-arrow').toggleClass("down")
     });
 
     // Всплывающая форма приглашения
