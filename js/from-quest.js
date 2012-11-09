@@ -8,6 +8,25 @@
 
 $(document).ready(function(){
 
+    $('#remove-event').click(function(){
+
+        if (!$(this).hasClass('disabled')) {
+            $(this).addClass('disabled')
+            $(this).nextAll('button').fadeIn();
+        }
+    });
+    function buttFadeOut(){
+        if ($('#remove-event').hasClass('disabled')) {
+            $('#remove-event').removeClass('disabled')
+            $('#remove-event').nextAll('button').fadeOut();
+        }
+    }
+    $('#cancel-event-del').click(function(){
+        buttFadeOut()
+    });
+    $('#confirm-event-del').click(function(){
+        buttFadeOut()
+    });
     $('.event-owner-select').change(function(){
 
         var leftPadd = $(this).children('option:selected').text().length

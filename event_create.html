@@ -48,7 +48,13 @@
         <div class="content-header-active last"><a href="/">Страница события</a></div>
         <div class="content-header-event last"><a href="/"><img src="images/event-logo.png"></a></div>
     </div>
+    <div class="content-right-sidebar shadow-border white" ></div>
     <div class="content-page">
+        <div class="event-controlls">
+            <span class="al"><a href="#">« вернуться</a></span>
+            <span class="ar"><a href="#">завершить редактирование</a></span>
+        </div>
+        <div class="event-create-wrp shadow-border">
         <div id="e-caption"><input name="ecaption"
                                    placeholder="event name"
                                    form="event-create-form"
@@ -105,11 +111,13 @@
                                                         form="event-create-form"
                                                         class="event-tags-input">
             </div>
-
+            <div id="e-manage">
+                <img src="images/people-icon.png"><a href="#">управлять списком гостей</a>
+            </div>
         </div>
         <div class="e-type">
-            <fieldset form="event-create-form">
-                <legend>Тип события</legend>
+            <span>Тип события</span>
+            <fieldset id="e-type" form="event-create-form">
                 <input type="radio"
                        checked
                        form="event-create-form"
@@ -133,9 +141,9 @@
                       class="event-text-input"></textarea>
         </div>
         <div class="e-participants">
-            <fieldset form="event-create-form">
-                <legend>Участники</legend>
-                <input type="radio"
+            <span>Участники</span>
+            <fieldset id="e-participants" form="event-create-form">
+               <input type="radio"
                        checked
                        form="event-create-form"
                        name="privasy"
@@ -169,31 +177,42 @@
             </fieldset>
         </div>
         <div class="e-comments">
+            <span>Коментарии</span>
             <fieldset form="event-create-form">
-                <legend>Коментарии</legend>
+
                 <input type="checkbox"
                        form="event-create-form"
                        name="catalog"
                        value=""> разрешать коментарии<br>
             </fieldset>
         </div>
+            <div class="e-other">
+                <span>Другое</span>
+                <fieldset form="event-create-form">
+                    <a id="remove-event">удалить событие</a>
+                    <button id="confirm-event-del" type="button">Confirm deletion</button>
+                    <button id="cancel-event-del" type="button">no</button>
+                </fieldset>
+            </div>
         <form id="event-create-form">
-            <input type="submit"
-                   value="Сохранить">
+
         </form>
         <div style="height:1px;overflow:hidden;clear:both;">
 
         </div>
     </div>
     <div id="logged-menu" class="slide-menu user-menu">
-
+        <img src="userimages/avatar01.png">
         <div class="">
             <a>Настройки</a>
         </div>
         <div class="">
+            <a>Профиль</a>
+        </div>
+        <div class="">
             <a>Выход</a>
         </div>
-
+    </div>
     </div>
 </div>
 <div class="footer">
@@ -225,7 +244,7 @@
         <span>Language</span>
         <ul>
             <li><a href="/">English</a></li>
-            <li><a href="/">Ukrainian</a></li>
+            <li><a href="/">Українська</a></li>
             <li><a href="/">German</a></li>
         </ul>
     </div>

@@ -48,12 +48,13 @@
             <div class="content-header-active last"><a href="/">Страница события</a></div>
             <div class="content-header-event last"><a href="/"><img src="images/event-logo.png"></a></div>
         </div>
+        <div id="notification" class="green"><span>Изменения сохранены</span></div>
         <div class="content-page draft-page">
             <div id="user-bar-left">
-                <div id="e-caption"><span>Street Art Utopia</span></div>
+                <!--<div id="e-caption"><span>Street Art Utopia</span></div>-->
 
 
-                <div id="user-info-left" class="grey shadow-border">
+                <div id="user-info-left" class="white shadow-border trans-border">
                     <img src="userimages/avatar01.png"
                          class="avatar">
                     <div><a href="/" class="activity-user-link username-mid">Username</a></div>
@@ -67,19 +68,19 @@
                     </div>
 
                 </div>
-                <div class="filter-draft">
+                <div class="filter-draft trans-border calendar-filter white shadow-border">
                     <span id="storedtime" hidden></span>
                     <div class="caption"><span>Отображать события</span></div>
                     <div class="filter-date left margin0"><img src="images/filterdate.png"><input id="datepicker" type="text"  hidden
-                                                                 ><span id="startdate">начиная с сегодня</span><a href="#">(change)</a>
+                                                                 ><span id="startdate">начиная с сегодня</span><a href="#"> (change)</a>
                     </div>
-                    <div class="filter-completed left margin0"><input id="finished" type="checkbox"><span> только активные</span></div>
-                    <div class="filter-completed left margin0"><input id="me-author" type="checkbox" name="my-event"><span> только где я - автор</span></div>
+                    <div class="filter-completed left margin0"><input id="finished" type="checkbox"><label for="finished"> только активные</label></div>
+                    <div class="filter-completed left margin0"><input id="me-author" type="checkbox" name="my-event"><label for="me-author"> только где я - автор</label></div>
                 </div>
                 <div style="height:1px;overflow:hidden;clear:both;"></div>
             </div>
             <div class="events-draft">
-                <div class="search-input left">
+                <div class="search-input shadow-border">
                     <input placeholder="search"
                            type="text"
                            class="search-text usual">
@@ -89,8 +90,8 @@
                            value="">
                 </div>
                 <div id="user-all-events"
-                     class="wide shadow-border">
-                    <div class="wide active">
+                     class=" shadow-border">
+                    <div class="full-wide active">
                         <span class="event-start-time" hidden>1317411533</span>
                         <span class="event-end-time" hidden>1245144005</span>
                         <img src="userimages/event-small0002.png">
@@ -99,7 +100,7 @@
                         </div>
                         <div class="draft-event-time"><span>Today, 17:45</span></div>
                     </div>
-                    <div class="wide active my-event">
+                    <div class="full-wide active my-event">
                         <span class="event-start-time" hidden>1317411533</span>
                         <span class="event-end-time" hidden>1245144005</span>
                         <img src="userimages/event-small0003.png">
@@ -110,7 +111,7 @@
                         </div>
                         <div class="draft-event-time"><span>Today, 22:32</span></div>
                     </div>
-                    <div class="wide ">
+                    <div class="full-wide">
                         <span class="event-start-time" hidden>1345944005</span>
                         <span class="event-end-time" hidden>1745144005</span>
                         <img src="userimages/event-small0001.png">
@@ -119,7 +120,7 @@
                         </div>
                         <div class="draft-event-time"><span>Apr 30 - May 03, 2012</span></div>
                     </div>
-                    <div class="wide my-event">
+                    <div class="full-wide my-event">
                         <span class="event-start-time" hidden>1345144005</span>
                         <span class="event-end-time" hidden>1745144005</span>
                         <img src="userimages/event-small0002.png">
@@ -130,7 +131,7 @@
                     </div>
 
                 </div>
-                <div class="draft-events-show-more shadow-border  wide">
+                <div class="draft-events-show-more shadow-border  full-wide">
                     <span>More</span>
                 </div>
 
@@ -141,14 +142,16 @@
             <div style="height:1px;overflow:hidden;clear:both;"></div>
         </div>
         <div id="logged-menu" class="slide-menu user-menu">
-
+            <img src="userimages/avatar01.png">
             <div class="">
                 <a>Настройки</a>
             </div>
             <div class="">
+                <a>Профиль</a>
+            </div>
+            <div class="">
                 <a>Выход</a>
             </div>
-
         </div>
     </div>
     <div class="footer">
@@ -181,7 +184,7 @@
             <span>Language</span>
             <ul>
                 <li><a href="/">English</a></li>
-                <li><a href="/">Ukrainian</a></li>
+                <li><a href="/">Українська</a></li>
                 <li><a href="/">German</a></li>
             </ul>
         </div>
