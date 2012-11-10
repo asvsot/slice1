@@ -8,6 +8,37 @@
 
 $(document).ready(function(){
 
+    $('#sett-email').click(function(){
+        $(this).hide();
+        $('#ch-email').slideDown();
+    })
+
+    $('#confirm').click(function(){
+        $('#ch-email').slideUp();
+        $('#sett-email').show();
+    })
+
+
+    $('#sett-pass').click(function(){
+        $(this).hide();
+        $('#ch-pass').slideDown();
+    })
+
+    $('#confirm2').click(function(){
+        $('#ch-pass').slideUp();
+        $('#sett-pass').show();
+    })
+
+    $('#acc-delete').click(function(){
+        $(this).hide();
+        $('#acc-dell-wrp').slideDown();
+    })
+
+    $('#confirm3').click(function(){
+        $('#acc-dell-wrp').slideUp();
+        $('#acc-delete').show();
+    })
+
     $('#remove-event').click(function(){
 
         if (!$(this).hasClass('disabled')) {

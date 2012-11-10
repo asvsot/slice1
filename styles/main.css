@@ -28,6 +28,7 @@ body {
     /*letter-spacing: 0px;*/
     margin: 0;
     font-size: 1em;
+    background:url("../images/bg.png");
 }
 
 .usual {
@@ -244,7 +245,7 @@ body {
 }
 
 .content-page {
-
+    background: url("../images/bg.png");
     width: 740px;
     height: 100%;
     margin-top: 20px;
@@ -268,6 +269,7 @@ body {
     text-decoration: none;
     color: #C7290C;
     font-size: 1em;
+    cursor: pointer;
     /*font-weight: bold;*/
 }
 
@@ -314,7 +316,7 @@ span.ar {
 }
 
 .content-right-sidebar {
-    width: 250px;
+    width: 240px;
     min-height: 600px;
     position: relative;
     right: 0;
@@ -327,8 +329,7 @@ span.ar {
 .search-input {
     border: none;
 
-    margin-left: 70%;
-    padding-left: 12px;
+    margin-left: 71.5%;
     padding-bottom: 5px;
     width: 215px;
     height: 23px;
@@ -364,9 +365,10 @@ span.ar {
 .search-text {
     border: 0;
     top: 0;
-    width: 85%;
+    width: 80%;
     font-size: 1em;
     padding-top: 3px;
+    padding-left: 15px;
     display: block;
     /*margin: 0;*/
     background: transparent;
@@ -391,14 +393,19 @@ span.ar {
     /*position: inherit;*/
     /*padding-top: 10px;*/
     /*padding-left: 5px;*/
+    margin-top: 10px;
     color: #505050;
     text-align: left;
-    font-size: 1em;
+    font-size: 0.80em;
+    padding-bottom: 20px;
 }
 
 .filter-caption {
+    text-align: center;
     position: relative;
 }
+
+
 
 .filter-date,
 .filter-location,
@@ -407,10 +414,11 @@ span.ar {
 .filter-loaded-tags {
     margin-left: 10px;
     margin-top: 15px;
+    line-height: 2em;
 }
 
 .filter-date {
-    line-height: 30px;
+
     cursor: pointer;
 }
 
@@ -427,6 +435,7 @@ span.ar {
 
 .filter-loaded-tags a {
     text-decoration: none;
+    font-style: italic;
     color: inherit;
 }
 
@@ -768,7 +777,7 @@ span.ar {
 .activity-search {
     position: absolute;
     padding-left: 5px;
-    /*right: -10px !important;*/
+    right: 0px !important;
 }
 
 .activity-period {
@@ -779,7 +788,7 @@ span.ar {
     /*padding-top: 20px;*/
     width: 100%;
     background-color: #ededed;
-
+    background: url("../images/bg.png");
 }
 
 .activity-period-first {
@@ -904,7 +913,7 @@ span.ar {
 .big-digit {
 
     color: #565656;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .small-text {
@@ -926,7 +935,7 @@ span.ar {
 }
 
 .user-info-right-sidebar {
-    width: 230px !important;
+    width: 240px !important;
     margin-top: 0 !important;
 }
 
@@ -936,19 +945,26 @@ span.ar {
     height: 82px;
     padding: 0;
     margin: 0;
-    padding: 20px 10px;
+    padding: 20px 0px;
     margin-right: 5px;
     margin-top: 0px;
-    width: 210px;
+    width: 200px;
     top: -15px;
+}
 
+#user-info-left>img {
+    margin-left: 10px ;
+}
 
+#user-info-left>div {
+    padding-left: 110px;
 }
 .grey {
     background-color: #dedddd;
 }
 .white {
-    background-color: #ffffff;
+    background: none;
+    background-color: #ffffff !important;
 }
 
 #user-info-left div span,#user-info-left div a {
@@ -963,16 +979,19 @@ span.ar {
     float: left;
 }
 
+
+
 .avatar {
     width: 80px;
     height: 80px;
 }
 
 #user-bar-left {
+    position: relative;
     float: left;
-    width: 240px;
+    width: 230px;
     top: 0;
-    margin: 0;
+    margin: 0 10px 0 0;
 }
 
 .filter-draft {
@@ -981,7 +1000,7 @@ span.ar {
     margin-top: 5px !important;
     padding: 10px;
     margin: 0;
-    width: 210px;
+    width: 208px;
 }
 
 .filter-draft  div {
@@ -990,7 +1009,7 @@ span.ar {
     font-size: 0.8em;
     margin-top: 1px;
     margin-bottom: 1px;
-    min-height: 30px;
+    min-height: 20px;
     color: #808080;
     text-align: left;
 }
@@ -1459,7 +1478,7 @@ span.ar {
 #user-events div, #user-all-events div {
     position: relative;
     float: left;
-    width: 250px;
+    width: 240px;
     padding: 0;
     height: 52px;
     background-color: #dedddd;
@@ -1541,6 +1560,7 @@ span.ar {
 }
 
 .event-owner-selects-wrapper {
+    margin-top: 10px;
     padding: 0px 15px;
     color: #C7290C;
 }
@@ -1571,7 +1591,8 @@ span.ar {
 }
 
 .profile-main-description {
-    width: 350px;
+    width: 650px;
+    padding: 0 0 0 15px;
     font-size: 0.8em;
 }
 
@@ -1593,24 +1614,29 @@ span.ar {
 }
 
 .profile-main-data {
-    width: 650px;
-    margin-left: 5px;
+    padding: 15px 0 0 15px;
+    width: 620px;
 }
 
 .profile-main-count {
-    width: 400px;
+     height: 100px;
+     width: 400px;
+ }
+
+.profile-main-count a{
+    color: #C7290C;
+    text-decoration: none;
 }
 
 .profile-main-count div {
-    width: 75px;
+    padding-left: 95px;
+
 }
 
 .first-event-counter {
     /*border-bottom: 3px solid #C7290C;*/
-    display: inline;
-    font-size: 1em;
-    margin-left: 3px;
-
+    font-size: 1.3em;
+    margin-top: 10px;
     /*width: 80px;*/
     height: 25px;
 }
@@ -1619,10 +1645,9 @@ span.ar {
 
 .second-event-counter {
     height: 25px;
-    display: inline;
+
     /*border-bottom: 3px solid orange;*/
-    font-size: 1em;
-    margin-left: 3px;
+    font-size: 1.3em;
 }
 
 .profile-site-link {
@@ -1980,6 +2005,10 @@ span.ar {
     height: 40px;
 }
 
+.profile-top {
+    padding: 15px;
+}
+
 .user-menu {
 
     /*margin: 0 auto;*/
@@ -2184,3 +2213,88 @@ h2.reg-inputs{
     padding-left: 50%;
 }
 
+.padding5 {
+    padding: 5px;
+}
+
+.padding0 {
+    padding: 0!important;
+}
+
+.settings-item {
+    width: 940px;
+    margin:0 auto ;
+    border-bottom: 1px solid #e3e3e3;
+    border-top: 1px solid #bababa;
+    /*font-weight: bold;*/
+}
+
+.settings-row {
+    font-size: 0.9em;
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    color: #727d84;
+}
+
+.settings-fields {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.settings-fields div {
+    min-height: 2em;
+    position: relative;
+    padding: 1px 10px 1px 10px;
+}
+
+.settings-fields input {
+    border: 0;
+    height: 1.9em;
+    /*padding-left: 10px;*/
+    /*font-weight: bold;*/
+    font-size: 1em;
+}
+
+.wide50p {
+    width: 42% !important;
+    margin: 0 19px 0 0 ;
+    display: inline-block !important;
+}
+
+#new-email, #pass1,#pass2,#pass2a,#old-pass, #pass3 {
+    position: relative;
+    width: 130px !important;
+    margin: 3px 15px 0 0;
+}
+
+#new-email input, #pass1 input, #pass2 input, #pass2a input, #old-pass input, #pass3 input {
+    width: 130px;
+}
+
+.marginb15 {
+    margin: 0 0 15px 0;
+}
+
+#confirm,#confirm2,#confirm3 {
+    display: block;
+    height: 2.6em;
+    width: 90px;
+}
+
+.margint15r40 {
+    margin: 7px 80px 0 0;
+}
+
+#ch-email, #ch-pass,#acc-dell-wrp {
+    display: none;
+}
+
+.first {
+    padding-top: 1px;
+    border-top: 0;
+}
+
+.last-bottom {
+    border-bottom: 0;
+}
