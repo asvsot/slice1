@@ -329,7 +329,7 @@ span.ar {
 .search-input {
     border: none;
 
-    margin-left: 71.5%;
+    margin-left: 70.5%;
     padding-bottom: 5px;
     width: 215px;
     height: 23px;
@@ -946,9 +946,9 @@ span.ar {
     padding: 0;
     margin: 0;
     padding: 20px 0px;
-    margin-right: 5px;
+    margin-right: 0px;
     margin-top: 0px;
-    width: 200px;
+    width: 240px;
     top: -15px;
 }
 
@@ -989,9 +989,9 @@ span.ar {
 #user-bar-left {
     position: relative;
     float: left;
-    width: 230px;
+    width: 240px;
     top: 0;
-    margin: 0 10px 0 0;
+    margin: 0 20px 0 0;
 }
 
 .filter-draft {
@@ -1000,7 +1000,7 @@ span.ar {
     margin-top: 5px !important;
     padding: 10px;
     margin: 0;
-    width: 208px;
+    width: 218px;
 }
 
 .filter-draft  div {
@@ -1050,7 +1050,7 @@ span.ar {
 .events-draft {
     position: relative;
     float: left;
-    width: 750px;
+    width: 730px;
     /*width: 75.73%;*/
 }
 
