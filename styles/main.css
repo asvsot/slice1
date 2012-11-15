@@ -11,6 +11,24 @@
     src: url('MyriadPro-Cond.otf') format("opentype");
 }
 
+* {
+    outline: none !important;
+}
+
+::-webkit-input-placeholder {
+    color: #999;
+}
+:-moz-placeholder {
+    color: #999;
+}
+.placeholder {
+    color: #999;
+
+}
+
+
+
+
 .last {
     border: 0 !important;
 }
@@ -167,11 +185,18 @@ body {
 
 .green {
     color: #4a9920;
-    background-color: rgba(238, 255, 238, 1);
+    background-color: #eeffee;
     border: 1px solid #aed1ae;
+     /* Параметры тени */
+
+}
+
+*|html .green {
+
     -moz-box-shadow: 0 0 5px rgba(144, 238, 144, 0.8); /* Для Firefox */
     -webkit-box-shadow: 0 0 5px rgba(144, 238, 144, 0.8); /* Для Safari и Chrome */
     box-shadow: 0 0 5px rgba(144, 238, 144, 0.8); /* Параметры тени */
+
 }
 
 .content {
@@ -2060,8 +2085,13 @@ span.ar {
     border: 1px solid transparent !important;
 }
 
-*|html .shadow-border {
+.shadow-border {
+    border: 1px solid #939593;
+}
 
+
+*|html .shadow-border {
+    border: 0;
     -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Для Firefox */
     -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Для Safari и Chrome */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Параметры тени */
@@ -2091,6 +2121,7 @@ h2.reg-inputs{
     /*border-radius: 5px;*/
     font-size: 1.3em;
     height: 1.5em;
+    line-height: 1.5em;
     margin:25px 10px 15px 0;
     width: 195px;
     padding-left: 7px;
@@ -2177,7 +2208,9 @@ h2.reg-inputs{
     padding-top: 10px;
 }
 
-.down {
+*|html
+
+ .down {
     padding: 0 !important;
     padding-bottom: 10px !important;
     -moz-transform: rotate(180deg);
@@ -2185,6 +2218,7 @@ h2.reg-inputs{
     -webkit-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
+
 }
 
 .owner-select>img {
@@ -2255,21 +2289,30 @@ h2.reg-inputs{
 .settings-fields div {
     min-height: 2em;
     position: relative;
-    padding: 1px 10px 1px 10px;
+
 }
 
 .settings-fields input {
-    border: 0;
+    display: block;
+
     height: 1.9em;
-    /*padding-left: 10px;*/
+    line-height: 1.9em;
+   padding-left: 10px;
+    width: 94%;
+    max-width: 97%;
     /*font-weight: bold;*/
     font-size: 1em;
 }
 
 .wide50p {
-    width: 42% !important;
+    width: 46.5% !important;
     margin: 0 19px 0 0 ;
     display: inline-block !important;
+}
+
+*|html .wide50p {
+    width: 47% !important;
+
 }
 
 #new-email, #pass1,#pass2,#pass2a,#old-pass, #pass3 {
@@ -2279,7 +2322,7 @@ h2.reg-inputs{
 }
 
 #new-email input, #pass1 input, #pass2 input, #pass2a input, #old-pass input, #pass3 input {
-    width: 130px;
+    width: 118px;
 }
 
 .marginb15 {

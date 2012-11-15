@@ -8,6 +8,9 @@
 
 $(document).ready(function(){
 
+    jQuery('input[placeholder], textarea[placeholder]').placeholder();
+
+
     $('#sett-email').click(function(){
         $(this).hide();
         $('#ch-email').slideDown();
@@ -225,7 +228,8 @@ $(document).ready(function(){
     // выпадающее меню авторизированного пользователя
     $('#username').click(function(){
         $('.slide-menu').toggle();
-        $('.top-white-arrow').toggleClass("down")
+       $('.top-white-arrow').toggleClass("down")
+
     });
 
     // Всплывающая форма приглашения
