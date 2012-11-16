@@ -75,7 +75,13 @@ body {
 }
 
 .menu-active a {
+color: #d3d3d3 !important;
+}
+
+
+*|html .menu-active a {
     text-shadow: black 1px 1px 2px;
+    color: #ffffff !important;
 }
 
 .page-header div {
@@ -106,6 +112,8 @@ body {
     padding-bottom: 10px;
 }
 
+
+
 .nav a {
     padding: 0;
     color: #ffffff;
@@ -115,7 +123,14 @@ body {
 }
 
 .nav a:active, .nav a:hover {
+    color: #adafad;
+}
+
+
+*|html
+ .nav a:active, .nav a:hover {
     text-shadow: black 1px 1px 2px;
+    color: #ffffff;
 }
 
 .border {
@@ -2231,7 +2246,13 @@ h2.reg-inputs{
 
 .empty-a, .empty-a *{
     /*border: 0px !important;*/
+
     text-decoration: none;
+}
+
+.empty-a {
+    display: block;
+    height: auto;
 }
 
 .events-wrp {
